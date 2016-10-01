@@ -22,9 +22,6 @@ A simple recommender application using either item-based or user-based approache
 *  [Programming Collective Intelligence](http://shop.oreilly.com/product/9780596529321.do)
 *  [Recommender Systems Handbook](http://www.springer.com/gp/book/9780387858203)
 
-#Contribution
-Contributions are welcome! For bug reports or requests please submit an [issue](https://github.com/tranlyvu/recommender/issues).
-
 #Contact-info
 Feel free to contact me to discuss any issues, questions, or comments.
 *  Email: vutransingapore@gmail.com
