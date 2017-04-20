@@ -20,7 +20,7 @@ Using recommender-engine
 	
 - Sample
 
-.. _sample: https://github.com/tranlyvu/recommender/blob/master/sample_jester.py
+.. _sample:https://github.com/tranlyvu/recommender-engine/tree/master/sample
 
 Contribution
 ============
