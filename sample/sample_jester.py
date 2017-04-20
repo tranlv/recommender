@@ -2,8 +2,8 @@
 	Running the application using Jester dataset:
 """
 
-from src.dataHandle import *
-from src.recommender import recommender
+from recommender.dataHandle import *
+from recommender.recommender import recommender
 
 def main():
 	#Creating preference_space from fromJester dataset:

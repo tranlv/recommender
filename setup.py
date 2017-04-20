@@ -1,9 +1,20 @@
+"""
+RecommenderEngine
+-----
+	RecommenderEngine is A simple recommender application
+	For more than you ever wanted to know about RecommenderEngine, see the documentation:
+
+	:copyright: (c) 2017 by Tran Ly VU.
+    :license: Apache License 2.0, see LICENSE for more details.
+"""
+
+
 from setuptools import setup
 
 setup(
-    name='recommender',
-	description='A simple recommender application using either item-based or user-based approach',
-	author='Vu Tran',
+    name='recommenderEngine',
+	description='A simple recommender application',
+	author='Tran Ly Vu',
 	author_email='vutransingapore@gmail.com',
     license='MIT',
     classifiers=[
@@ -14,7 +25,7 @@ setup(
 		'Programming Language :: Python :: 2.7',
 		'Operating System :: Microsoft :: Windows :: Windows 7',
 		'Natural Language :: English',
-		'License :: OSI Approved :: MIT License',
+		'License :: OSI Approved :: Apache License 2.0',
 	],
 	keywords='recommender engine',
 	packages=['recommender']
