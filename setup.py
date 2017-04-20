@@ -1,10 +1,10 @@
-from setuptools import setup,find_packages
+from setuptools import setup
 
 setup(
     name='recommender',
 	description='A simple recommender application using either item-based or user-based approach',
 	author='Vu Tran',
-	author_email='vutransingapore@gmail.com
+	author_email='vutransingapore@gmail.com',
     license='MIT',
     classifiers=[
 		'Development Status :: 3 - Alpha',
@@ -17,6 +17,6 @@ setup(
 		'License :: OSI Approved :: MIT License',
 	],
 	keywords='recommender engine',
-	packages=['recommender'],
+	packages=['recommender']
 			
 )
