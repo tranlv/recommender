@@ -2,7 +2,6 @@
 	Running the application using Movielens dataset
 """
 
-from dataHandle import *
 from recommender import *
 
 def main():

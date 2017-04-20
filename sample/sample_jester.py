@@ -2,7 +2,6 @@
 	Running the application using Jester dataset:
 """
 
-from recommender.dataHandle import *
 from recommender.recommender import recommender
 
 def main():

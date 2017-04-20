@@ -1,10 +1,5 @@
-"""
-	main module of the application
-"""
 
-from recommenderEngine import *
 from similarityMeasure import *
-
 
 
 class recommender:

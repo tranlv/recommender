@@ -1,8 +1,8 @@
 """
-RecommenderEngine
+Recommender
 -----
-	RecommenderEngine is A simple recommender application
-	For more than you ever wanted to know about RecommenderEngine, see the documentation:
+	Recommender is A recommendation engine
+	For more than you ever wanted to know about Recommender, see the documentation:
 
 	:copyright: (c) 2017 by Tran Ly VU.
     :license: Apache License 2.0, see LICENSE for more details.
@@ -12,8 +12,8 @@ RecommenderEngine
 from setuptools import setup
 
 setup(
-    name='recommenderEngine',
-	description='A simple recommender application',
+    name='recommender',
+	description='A recommendation engine',
 	author='Tran Ly Vu',
 	author_email='vutransingapore@gmail.com',
     license='MIT',
@@ -27,7 +27,7 @@ setup(
 		'Natural Language :: English',
 		'License :: OSI Approved :: Apache License 2.0',
 	],
-	keywords='recommender engine',
+	keywords='recommender',
 	packages=['recommender']
 			
 )

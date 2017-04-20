@@ -1,13 +1,13 @@
-========
-recommender-engine
-========
-A simple recommender application using either item-based or user-based approaches
+===========
+recommender
+===========
+A recommendation engine using either item-based or user-based approaches
 
-Using recommender-engine
-===============
+Using recommender
+=================
 - Downloading a release_.
 
-.. _release: https://github.com/tranlyvu/recommender-engine
+.. _release: https://github.com/tranlyvu/recommender/releases
 
 - Quickstart
 
@@ -20,7 +20,7 @@ Using recommender-engine
 	
 - Sample
 
-.. _sample:https://github.com/tranlyvu/recommender-engine/tree/master/sample
+.. _sample:https://github.com/tranlyvu/recommender/tree/master/sample
 
 Contribution
 ============
@@ -38,11 +38,11 @@ Frequently Asked Questions
 ==========================
 - The FAQs can be found on the project's Wiki_ page. Feel free to submit more questions to be answered and added to the page.
 
-.. _Wiki: https://github.com/tranlyvu/recommender-engine/wiki
+.. _Wiki: https://github.com/tranlyvu/recommender/wiki
 
 License
 =======
 See the LICENSE_ file for license rights and limitations (Apache License 2.0).
 
-.. _LICENSE: https://github.com/tranlyvu/recommender-engine/blob/master/LICENSE
+.. _LICENSE: https://github.com/tranlyvu/recommender/blob/master/LICENSE
 
