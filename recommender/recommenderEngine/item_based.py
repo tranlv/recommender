@@ -1,5 +1,3 @@
-
-from recommender.similarityMeasure import *
 from recommender.similarItem import *
 
 def item_based(preference_space,person_to_recommend,number_of_item,similarity):

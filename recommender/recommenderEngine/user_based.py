@@ -1,6 +1,3 @@
-
-from recommender.similarityMeasure import *
-
 def user_based(preference_space,person_to_recommend,number_of_items,similarity):
 	"""
 	Initializing user-based recommender algorithm
@@ -39,7 +36,7 @@ def user_based(preference_space,person_to_recommend,number_of_items,similarity):
 				totals[item]+=sim*preference_space[other_person][item]
 				similarity_sum.setdefault(item,0)
 				similarity_sum[item]+=sim		
-	results=[(total[item]/similarity_sum[item],item) for item in totals.keys()]	
+	results=[(totals[item]/similarity_sum[item],item) for item in totals.keys()]
 	results.sort()
 	results.reverse()
 	return [x[1] for x in results[0:number_of_items]]
