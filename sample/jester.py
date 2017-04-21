@@ -1,11 +1,5 @@
-"""
-	The module processes jester data set
-"""
-
-from recommender.recommenderEngine import *
-from recommender.similarity_measure import *
 from xlrd import open_workbook
-import pandas as pd
+
 
 def merge_preference_space(*prefs_space):
 	"""
