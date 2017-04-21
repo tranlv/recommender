@@ -3,7 +3,7 @@
 """
 
 from recommender.recommenderEngine import *
-from recommender.similarityMeasure import *
+from recommender.similarity_measure import *
 from xlrd import open_workbook
 import pandas as pd
 

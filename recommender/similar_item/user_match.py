@@ -3,7 +3,7 @@
 	The default similarity measure is euclidean distance
 """
 
-from recommender.similarityMeasure import *
+from recommender.similarity_measure import *
 
 def user_match(preference_space,person_to_recommend,n=10,similarity=euclidean_distance):
 	result=[(similarity(preference_space,person_to_recommend,other),other) 

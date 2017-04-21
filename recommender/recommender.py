@@ -1,5 +1,5 @@
 
-from similarityMeasure import *
+from similarity_measure import *
 
 
 class recommender:
