@@ -18,9 +18,8 @@ Usage
 
 ```
 Create preference_space: dictionary type, keys are users while values are dictionary of items and ratings
-    ie. preference_space={'userA:{'item1':'ratingA1,'item2':'ratingA2'....'itemn':'ratingAn},
-						'userB:{'item1':'ratingB1,'item2':'ratingB2'....'itemn':'ratingBn},					'userZ:{'item1':'ratingZ1,'item2':'ratingZ2'....'itemn':'ratingZn},
-						...}
+    ie. preference_space = {'userA:{'item1':'ratingA1,'item2':'ratingA2'....'itemn':'ratingAn},
+						'userB:{'item1':'ratingB1,'item2':'ratingB2'....'itemn':'ratingBn},					'userZ:{'item1':'ratingZ1,'item2':'ratingZ2'....'itemn':'ratingZn},...}
 Initializing class 'recommender'
 Calling 'make_recommender' method to make recommendation 
 ```
