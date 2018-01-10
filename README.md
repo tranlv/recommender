@@ -6,7 +6,7 @@
 Overview
 ---
 
-The repo containes a recommendation engine using either item-based or user-based approaches.
+The repo containes a recommendation application using either item-based or user-based approaches.
 
 ---
 Usage
