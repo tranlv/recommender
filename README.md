@@ -1,5 +1,7 @@
 # **recommender**
 
+<img src="img/recommender.png" width="480" alt="Combined Image" />
+
 ---
 Overview
 ---
