@@ -30,9 +30,7 @@ Usage
 ---
 Contribution
 ---
-- Join our [gitter](https://gitter.im/recommender-enginer)
-- For any feature recommendation please register a [blueprint](https://blueprints.launchpad.net/recommender-engine)
-- For bug reports or requests please submit an [issue](https://github.com/tranlyvu/recommender-engine/issues)
+For bug reports or requests please submit an [issue](https://github.com/tranlyvu/recommender/issues).
 
 ---
 Contact
