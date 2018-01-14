@@ -16,14 +16,14 @@ setup(
 	description='A recommendation engine',
 	author='Tran Ly Vu',
 	author_email='vutransingapore@gmail.com',
-    license='MIT',
+    license='Apache License',
     classifiers=[
 		'Development Status :: 3 - Alpha',
 		'Intended Audience :: Science/Research',
 		'Framework :: IPython'
 		'Topic :: Scientific/Engineering :: Artificial Intelligence',
-		'Programming Language :: Python :: 2.7',
-		'Operating System :: Microsoft :: Windows :: Windows 7',
+		'Programming Language :: Python :: 3.6',
+		'Operating System :: Microsoft :: Windows :: Windows 10',
 		'Natural Language :: English',
 		'License :: OSI Approved :: Apache License 2.0',
 	],
