@@ -1,20 +1,20 @@
 # **recommender**
 
+A recommendation application using either item-based or user-based approaches.
+
 <img src="img/recommender.png" width="480" alt="Combined Image" />
-
----
-Overview
----
-
-The repo containes a recommendation application using either item-based or user-based approaches.
 
 ---
 Usage
 ---
 
-- Downloading a [release](https://github.com/tranlyvu/recommender/releases).
+- Downloading a [release](https://github.com/tranlyvu/recommender/releases) or fork the source code: 
 
-- Quickstart
+```
+$git clone https://github.com/tranlyvu/recommender.git
+```
+
+- Quickstart:
 
 ```
 Create preference_space: dictionary type, keys are users and values are dictionary of items and ratings
@@ -24,12 +24,43 @@ Initializing class 'recommender'
 Calling 'make_recommender' method to make recommendation 
 ```
 
-- [Sample](https://github.com/tranlyvu/recommender/tree/master/sample)
+- The simplest way is to run the [sample file](https://github.com/tranlyvu/recommender/tree/master/sample)
+
+
+---
+Development Setup
+---
+
+To do
+
+---
+Project Architecture
+---
+
+To do
+
+---
+Release History
+---
+
+To do
 
 ---
 Contribution
 ---
+
 For bug reports or requests please submit an [issue](https://github.com/tranlyvu/recommender/issues).
+
+For new features contribution, please follow the following instruction:
+
+```
+1. Fork the source code (`$git clone https://github.com/tranlyvu/recommender.git`)
+2. Create your feature branch (`$git checkout -b new/your-feature`)
+3. Commit your changes (`$git commit -am 'Add some new feature'`)
+4. Push to the branch (`$git push origin new/your-feature`)
+5. Create a new [Pull Request](https://github.com/tranlyvu/recommender/pulls)
+```
+
 
 ---
 Contact
