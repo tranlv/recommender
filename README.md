@@ -31,7 +31,7 @@ Calling 'make_recommender' method to make recommendation
 Development Setup
 ---
 
-To do
+recommender was developed with Python 3.6
 
 ---
 Project Architecture
@@ -58,7 +58,7 @@ For new features contribution, please follow the following instruction:
 2. Create your feature branch (`$git checkout -b new/your-feature`)
 3. Commit your changes (`$git commit -am 'Add some new feature'`)
 4. Push to the branch (`$git push origin new/your-feature`)
-5. Create a new [Pull Request](https://github.com/tranlyvu/recommender/pulls)
+5. Create a new Pull Request at https://github.com/tranlyvu/recommender/pulls
 ```
 
 
