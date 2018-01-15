@@ -1,4 +1,4 @@
-from similarity_measure import *
+from .similarity_measure import *
 
 
 class recommender:

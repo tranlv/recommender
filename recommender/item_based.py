@@ -1,4 +1,4 @@
-from recommender.similar_item import *
+from .recommender.similar_item import *
 
 def item_based(preference_space,person_to_recommend,number_of_item,similarity):
 	"""
