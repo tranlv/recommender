@@ -1,4 +1,3 @@
-
 from recommender.recommender import recommender
 from xlrd import open_workbook
 
@@ -65,7 +64,7 @@ def sample_jester():
 	"""
 
 	#Creating preference_space from fromJester dataset:
-	preference_space=make_preference_space_Jester('/github/recommender/data/Jester')
+	preference_space=make_preference_space_Jester('../data/Jester')
 	model=recommender(preference_space,recommender='user_based',number_of_items_to_recommend=5,similarity='euclidean_distance')
 	print(model.make_recomendation('user 36681'))
 
@@ -75,9 +74,12 @@ def sample_movielens():
 	"""
 
 	#Creating preference_space from Movielen dataset:
-	preference_space=make_preference_space_MovieLens('/recommender/data/Movielens')
+	preference_space=make_preference_space_MovieLens('../data/Movielens')
 	model=recommender(preference_space=preference_space,recommender='user_based',number_of_items_to_recommend=10,similarity='euclidean_distance')
 	print(model.make_recomendation('1'))
-	
+
+def main():
+	 sample_jester()
+
 if __name__=="__main__":
-	smain()
+	main()
