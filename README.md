@@ -61,7 +61,6 @@ For new features contribution, please follow the following instruction:
 5. Create a new Pull Request at https://github.com/tranlyvu/recommender/pulls
 ```
 
-
 ---
 Contact
 ---
