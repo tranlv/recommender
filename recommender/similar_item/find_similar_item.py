@@ -1,5 +1,5 @@
-
-import user_match,preference_space_transform
+from .user_match import user_match
+from .preference_space_transform import preference_space_transform
 from recommender.similarity_measure import *
 
 def find_similar_item(preference_space,n=10,similarity=euclidean_distance):
