@@ -70,17 +70,17 @@ def sample_jester():
 		Running the application using Jester dataset:
 	"""
 
-	#Creating preference_space from fromJester dataset:
+	#Creating preference_space from Jester dataset
 	preference_space=make_preference_space_Jester('../data/Jester')
 	model=recommender(preference_space,recommender='user_based',number_of_items_to_recommend=5,similarity='euclidean_distance')
 	print(model.make_recomendation('user 36681'))
 
 def sample_movielens():
 	"""
-		Running the application using Jester dataset:
+		Running the application using Movielens dataset:
 	"""
 
-	#Creating preference_space from Movielen dataset:
+	#Creating preference_space from Movieslen dataset
 	preference_space=make_preference_space_MovieLens('../data/Movielens')
 	model=recommender(preference_space=preference_space,recommender='user_based',number_of_items_to_recommend=10,similarity='euclidean_distance')
 	print(model.make_recomendation('1'))
