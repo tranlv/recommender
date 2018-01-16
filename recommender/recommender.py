@@ -1,5 +1,6 @@
 from .similarity_measure import *
-
+from .user_based import user_based
+from .item_based import item_based
 
 class recommender:
 	def __init__(self, preference_space, recommender = 'user_based',
@@ -54,7 +55,7 @@ class recommender:
 		self.number_of_item = number_of_items_to_recommend
 
 	
-	def make_recomendation(self,user):
+	def make_recomendation(self, user):
 	
 		""" return items recommended
 		Parameters
