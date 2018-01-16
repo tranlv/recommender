@@ -49,7 +49,6 @@ def make_preference_space_Jester(file_path):
 	return merge_preference_space(prefs_space_1, prefs_space_2, prefs_space_3)
 	
 
-
 def make_preference_space_MovieLens(path):
 	"""
 		The function processes Movielens data set
@@ -68,7 +67,6 @@ def make_preference_space_MovieLens(path):
 	return preference_space
 
 
-
 def sample_jester():
 	"""
 		Running the application using Jester dataset:
@@ -76,8 +74,8 @@ def sample_jester():
 
 	#Creating preference_space from Jester dataset
 	preference_space = make_preference_space_Jester('../data/Jester')
-	model = recommender(preference_space, recommender = 'user_based', number_of_items_to_recommend = 5,
-													similarity = 'euclidean_distance')
+	model = recommender(preference_space, recommender = 'user_based', 
+					number_of_items_to_recommend = 5, similarity = 'euclidean_distance')
 	print(model.make_recomendation('user 36681'))
 
 def sample_movielens():
@@ -88,11 +86,13 @@ def sample_movielens():
 	#Creating preference_space from Movieslen dataset
 	preference_space = make_preference_space_MovieLens('../data/Movielens')
 	model = recommender(preference_space = preference_space, recommender = 'user_based', 
-									number_of_items_to_recommend = 10, similarity = 'euclidean_distance')
+						number_of_items_to_recommend = 10, similarity = 'euclidean_distance')
 	print(model.make_recomendation('1'))
 
 def main():
-	 sample_jester()
+	sample_jester()
+	sample_movielens()
+
 
 if __name__=="__main__":
 	main()
