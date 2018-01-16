@@ -2,7 +2,7 @@ from recommender.recommender import recommender
 from xlrd import open_workbook
 
 """
-	This sample used jester and movielens as sample datasets, you can download dataset as
+	This sample used jester and movielens as sample datasets, you can download dataset at: 
 	
 	https://grouplens.org/datasets/movielens/
 	http://goldberg.berkeley.edu/jester-data/
