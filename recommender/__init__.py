@@ -1,10 +1,3 @@
-__all__=[
-		'dataHandle',
-		'recommenderEngine',
-		'similarItem',
-		'similarityMeasure'
-		]
-
 from .similarity_measure import (
 	cosine,
 	euclidean_distance,
@@ -16,6 +9,12 @@ from .similar_item import (
 	preferance_space_transform,
 	user_match
 )
-	
+
+__all__=[
+		'dataHandle',
+		'recommenderEngine',
+		'similarItem',
+		'similarityMeasure'
+		]	
 
 __version__ = '1.0.0'

@@ -10,3 +10,5 @@ __all__=['cosine',
 		 'euclidean_distance',
 		 'pearson_correlation'
 		]
+
+__version__ = '1.0.0'

@@ -1,6 +1,13 @@
 from recommender.recommender import recommender
 from xlrd import open_workbook
 
+"""
+	This sample used jester and movielens as sample datasets, you can download dataset as
+	
+	https://grouplens.org/datasets/movielens/
+	http://goldberg.berkeley.edu/jester-data/
+
+"""
 
 def merge_preference_space(*prefs_space):
 	"""
