@@ -6,7 +6,7 @@ from .similarity_measure import (
 
 from .similar_item import (
 	find_similar_item,
-	preferance_space_transform,
+	preference_space_transform,
 	user_match
 )
 
