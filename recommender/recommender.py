@@ -25,9 +25,9 @@ class recommender:
 		   Returns self.
 		"""
 		algorithms_string = ['user_based', 'item_based']
-		algorithms_list = [user_based,item_based]	
+		algorithms_list = [user_based, item_based]	
 		similarity_string = ['euclidean_distance','cosine','pearson_correlation']
-		similarity_list = [euclidean_distance,cosine,pearson_correlation]
+		similarity_list = [euclidean_distance, cosine, pearson_correlation]
 		
 		if not isinstance(preference_space,dict) :
 			raise TypeError("preference space is not dictionary type!")	
