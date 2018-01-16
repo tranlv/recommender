@@ -16,8 +16,7 @@ $git clone https://github.com/tranlyvu/recommender.git
 
 - The simplest way is to look at the [sample file](https://github.com/tranlyvu/recommender/tree/master/sample) for usage and run it. Plese download the 2 datasets, Jester ([here](http://goldberg.berkeley.edu/jester-data/jester-data-1.zip), [here](http://goldberg.berkeley.edu/jester-data/jester-data-2.zip) and [here](http://goldberg.berkeley.edu/jester-data/jester-data-3.zip)) and [MovieLens](http://files.grouplens.org/datasets/movielens/ml-10m.zip) to use as sample datasets before running it.
 
-- Note that the preference space is dictionary data structure where keys are users and values are dictionary of items and ratings 
-i.e preference_space = {'userA:{'item1':'ratingA1,'item2':'ratingA2'....'itemn':'ratingAn}, ..., 'userZ:{'item1':'ratingZ1,'item2':'ratingZ2'....'itemn':'ratingZn},...}
+- Note that the preference space is dictionary data structure where keys are users and values are dictionary of items and ratings; i.e. preference_space = {'userA : {'item1' : 'ratingA1, 'item2' : 'ratingA2'..., 'itemn' : 'ratingAn}, ..., 'userZ:{'item1' : 'ratingZ1, 'item2' : 'ratingZ2'..., 'itemn' : 'ratingZn}}
 
 ---
 Development Setup
