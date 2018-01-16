@@ -3,7 +3,7 @@
 into another space where keys are items and values are users
 """
 
-def preferance_space_transform(preference_space):
+def preference_space_transform(preference_space):
 	transform={}
 	for person in preference_space:
 		for item in preference_space[person]:
