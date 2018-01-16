@@ -1,5 +1,7 @@
 # **recommender**
 
+[![Build Status](https://travis-ci.org/tranlyvu/recommender.svg?branch=master)](https://travis-ci.org/tranlyvu/recommender) [![Code Health](https://landscape.io/github/tranlyvu/recommender/master/landscape.svg?style=flat)](https://landscape.io/github/tranlyvu/recommender/master) [![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/recommender-engine)
+
 A recommendation application using either item-based or user-based approaches.
 
 <img src="img/recommender.png" width="480" alt="Combined Image" />
