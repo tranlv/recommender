@@ -4,7 +4,7 @@ Recommender
 	Recommender is A recommendation engine
 	For more than you ever wanted to know about Recommender, see the documentation:
 
-	:copyright: (c) 2015 by Tran Ly VU.
+	:copyright: (c) 2018 by Tran Ly VU.
     :license: Apache License 2.0, see LICENSE for more details.
 """
 
