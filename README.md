@@ -123,7 +123,6 @@ $ git remote add upstream https://github.com/tranlyvu/recommender.git
 $ git checkout master
 $ git merge upstream/master
 ```
-```
 
 ---
 Contact
