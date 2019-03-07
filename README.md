@@ -3,7 +3,7 @@
 [1]: http://hits.dwyl.io/tranlyvu/recommender.svg
 [2]: http://hits.dwyl.io/tranlyvu/recommender
 
-| Build | [![Build Status][3]][4] | [![Coverage Status][5]][6] | [![Code Health][9]][10] | 
+| Build | [![Build Status][3]][4] | [![Coverage Status][5]][6] | | 
 | :--- | :--- | :---  | :--- |
 | **Quality** | [![Maintainability][13]][14] | [![Known Vulnerabilities][15]][16] | [![Requirements Status][19]][20] |
 | **Support** | [![Join the chat at https://gitter.im/find-link/Lobby][17]][18] | [![Open Source Helpers][7]][8] |  |
@@ -12,8 +12,6 @@
 [4]: https://travis-ci.org/tranlyvu/recommender
 [5]:https://coveralls.io/repos/github/tranlyvu/recommender/badge.svg?branch=dev
 [6]: https://coveralls.io/github/tranlyvu/recommender?branch=dev
-[9]: https://landscape.io/github/tranlyvu/recommender/dev/landscape.svg?style=flat
-[10]: https://landscape.io/github/tranlyvu/recommender/dev
 
 [13]: https://api.codeclimate.com/v1/badges/de05d6acb8cd3b11aa0c/maintainability
 [14]: https://codeclimate.com/github/tranlyvu/recommender/maintainability
@@ -123,6 +121,11 @@ $ git remote add upstream https://github.com/tranlyvu/recommender.git
 $ git checkout master
 $ git merge upstream/master
 ```
+---
+Hall of Fame
+---
+
+[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/0)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/0)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/1)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/1)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/2)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/2)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/3)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/3)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/4)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/4)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/5)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/5)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/6)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/6)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/7)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/7)
 
 ---
 Contact
