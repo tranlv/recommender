@@ -16,8 +16,8 @@
 [13]: https://api.codeclimate.com/v1/badges/de05d6acb8cd3b11aa0c/maintainability
 [14]: https://codeclimate.com/github/tranlyvu/recommender/maintainability
 
-[15]: https://snyk.io/test/github/tranlyvu/wiki-link/badge.svg
-[16]: https://snyk.io/test/github/tranlyvu/Wiki-link
+[15]: https://snyk.io/test/github/tranlyvu/recommender/badge.svg?targetFile=requirements.txt
+[16]: https://snyk.io/test/github/tranlyvu/recommender?targetFile=requirements.txt
 
 [19]: https://requires.io/github/tranlyvu/recommender/requirements.svg?branch=dev
 [20]: https://requires.io/github/tranlyvu/recommender/requirements/?branch=dev
