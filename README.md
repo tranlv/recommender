@@ -5,7 +5,7 @@
 
 | Build | [![Build Status][3]][4] | [![Coverage Status][5]][6] | | 
 | :--- | :--- | :---  | :--- |
-| **Quality** | [![Maintainability][13]][14] | [![Known Vulnerabilities][15]][16] | [![Requirements Status][19]][20] |
+| **Quality** | [![Maintainability][13]][14] | [![Requirements Status][19]][20] | |
 | **Support** | [![Join the chat at https://gitter.im/find-link/Lobby][17]][18] | [![Open Source Helpers][7]][8] |  |
 
 [3]: https://travis-ci.org/tranlyvu/recommender.svg?branch=dev
@@ -16,8 +16,6 @@
 [13]: https://api.codeclimate.com/v1/badges/de05d6acb8cd3b11aa0c/maintainability
 [14]: https://codeclimate.com/github/tranlyvu/recommender/maintainability
 
-[15]: https://snyk.io/test/github/tranlyvu/recommender/badge.svg?targetFile=requirements.txt
-[16]: https://snyk.io/test/github/tranlyvu/recommender?targetFile=requirements.txt
 
 [19]: https://requires.io/github/tranlyvu/recommender/requirements.svg?branch=dev
 [20]: https://requires.io/github/tranlyvu/recommender/requirements/?branch=dev
@@ -46,8 +44,12 @@ $git clone https://github.com/tranlyvu/recommender.git
 - Note that the preference space is dictionary data structure where keys are users and values are dictionary of items and ratings; i.e. preference_space = {'userA : {'item1' : 'ratingA1, 'item2' : 'ratingA2'..., 'itemn' : 'ratingAn}, ..., 'userZ:{'item1' : 'ratingZ1, 'item2' : 'ratingZ2'..., 'itemn' : 'ratingZn}}
 
 ---
-Development Setup
+Contribution
 ---
+
+Please follow [contribution instruction](https://github.com/tranlyvu/recommender/blob/dev/CONTRIBUTING.md) and [code of conduct](https://github.com/tranlyvu/recommender/blob/dev/CODE-OF-CONDUCT.md)
+
+### Development setup
 
 recommender was developed with Python 3.6. Simply run the following on your development environment:
 
@@ -68,6 +70,12 @@ If you are done working in the virtual environment for the moment, you can deact
 ```
 $ deactivate
 ```
+### [List of contributors](https://github.com/tranlyvu/recommender/blob/dev/CONTRIBUTORS.md)
+
+### Hall of Fame
+
+[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/0)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/0)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/1)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/1)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/2)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/2)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/3)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/3)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/4)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/4)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/5)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/5)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/6)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/6)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/7)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/7)
+
 
 ---
 Project Architecture
@@ -81,51 +89,6 @@ Release History
 
 * v1.0.0 - Jan 16, 2018
 	* First official release
-
----
-Contribution
----
-
-For bug reports or requests please submit an [issue](https://github.com/tranlyvu/recommender/issues).
-
-For new features contribution, please follow the following instruction:
-
-1. Fork the repo https://github.com/tranlyvu/recommender.git to your own github
-
-2. Clone from your own repo
-
-`$ git clone https://github.com/<your name>/recommender.git`
-
-3. Make sure you are at dev branch 
-
-`$ git checkout dev && git pull`
-
-4. Create your feature/bug-fix branch
-
-`$ git checkout -b <feature/bug>/<branch-name>`
-
-5. Commit your changes 
-
-`$ git commit -am 'Add some new feature'`
-
-6. Push to the branch 
-
-`$ git push`
-
-7. Go to your own repo and create a new Pull Request against 'dev' branch
-
-8. To sync your forked repo with my repo
-
-```
-$ git remote add upstream https://github.com/tranlyvu/recommender.git
-$ git checkout master
-$ git merge upstream/master
-```
----
-Hall of Fame
----
-
-[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/0)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/0)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/1)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/1)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/2)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/2)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/3)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/3)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/4)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/4)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/5)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/5)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/6)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/6)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/7)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/7)
 
 ---
 Contact
