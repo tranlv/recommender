@@ -1,7 +1,11 @@
-# **recommender** [![HitCount][1]][2] 
+# **recommender** [![HitCount][1]][2] [![star this repo][21]][22] [![fork this repo][23]][24] 
 
 [1]: http://hits.dwyl.io/tranlyvu/recommender.svg
 [2]: http://hits.dwyl.io/tranlyvu/recommender
+[21]: http://githubbadges.com/star.svg?user=tranlyvu&repo=recommender&style=default
+[22]: https://github.com/tranlyvu/recommender
+[23]: http://githubbadges.com/fork.svg?user=tranlyvu&repo=recommender&style=default
+[24]: https://github.com/tranlyvu/recommender/fork
 
 | Build | [![Build Status][3]][4] | [![Coverage Status][5]][6] | | 
 | :--- | :--- | :---  | :--- |
