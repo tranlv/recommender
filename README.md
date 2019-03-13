@@ -47,22 +47,24 @@ Table of contents
 Usage
 ---
 
-- Downloading a [release](https://github.com/tranlyvu/recommender/releases) or clone the source code: 
+- Downloading a [release](https://github.com/tranlyvu/recommender/releases)
+
+### API
+
+### Example
+
+- The preference space is dictionary data structure where keys are users and values are dictionary of items and ratings; i.e. 
 
 ```
-$ git clone https://github.com/tranlyvu/recommender.git
+preference_space = {'userA : {'item1' : 'ratingA1, 'item2' : 'ratingA2'..., 'itemn' : 'ratingAn}, ..., 'userZ:{'item1' : 'ratingZ1, 'item2' : 'ratingZ2'..., 'itemn' : 'ratingZn}}
 ```
-
-- The simplest way is to look at the [sample file](https://github.com/tranlyvu/recommender/tree/master/sample) for usage.
-
-- Note that the preference space is dictionary data structure where keys are users and values are dictionary of items and ratings; i.e. preference_space = {'userA : {'item1' : 'ratingA1, 'item2' : 'ratingA2'..., 'itemn' : 'ratingAn}, ..., 'userZ:{'item1' : 'ratingZ1, 'item2' : 'ratingZ2'..., 'itemn' : 'ratingZn}}
 
 ### Tested Datasets
 
-Jester ([here](http://goldberg.berkeley.edu/jester-data/jester-data-1.zip), [here](http://goldberg.berkeley.edu/jester-data/jester-data-2.zip) and [here](http://goldberg.berkeley.edu/jester-data/jester-data-3.zip))
+The project has been tested on these Datasets
 
-[MovieLens](http://files.grouplens.org/datasets/movielens/ml-10m.zip)
-
+1. [Jester](http://goldberg.berkeley.edu/jester-data)
+2. [MovieLens](http://files.grouplens.org/datasets/movielens/)
 
 ---
 Contribution
@@ -72,10 +74,10 @@ Please follow [contribution instruction](https://github.com/tranlyvu/recommender
 
 ### Development setup
 
-recommender was developed with Python 3.6. Simply run the following on your development environment:
+Simply run the following on your development environment:
 
 ```
-$pip install -r requirement.txt
+$ pip install -r requirement.txt
 ```
 Or to set up environment with virtualenv
 
@@ -116,8 +118,10 @@ Release History
 	* First official release
 
 ---
-Contact
+Contact [![Say Thank][7]][8]
 ---
+[7]: https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg
+[8]: https://saythanks.io/to/tranlyvu
 
 Feel free to contact me to discuss any issues, questions, or comments.
 *  Email: vutransingapore@gmail.com
