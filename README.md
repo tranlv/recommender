@@ -118,10 +118,10 @@ Release History
 	* First official release
 
 ---
-Contact [![Say Thank][7]][8]
+Contact [![Say Thank][9]][10]
 ---
-[7]: https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg
-[8]: https://saythanks.io/to/tranlyvu
+[9]: https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg
+[10]: https://saythanks.io/to/tranlyvu
 
 Feel free to contact me to discuss any issues, questions, or comments.
 *  Email: vutransingapore@gmail.com
