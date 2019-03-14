@@ -72,7 +72,7 @@ Contribution[![Open Source Helpers][7]][8]
 [7]: https://www.codetriage.com/tranlyvu/recommender/badges/users.svg
 [8]: https://www.codetriage.com/tranlyvu/recommender
 
-Please follow [contribution instruction](https://github.com/tranlyvu/recommender/blob/dev/CONTRIBUTING.md) and [code of conduct](https://github.com/tranlyvu/recommender/blob/dev/CODE-OF-CONDUCT.md)
+Please follow our contribution convention at [contribution instruction](https://github.com/tranlyvu/recommender/blob/dev/CONTRIBUTING.md) and [code of conduct](https://github.com/tranlyvu/recommender/blob/dev/CODE-OF-CONDUCT.md)
 
 ### List of issues
 
@@ -109,9 +109,7 @@ Feel free to contact me to discuss any issues, questions, or comments.
 *  GitHub: [Tran Ly Vu](https://github.com/tranlyvu)
 *  Blog: [tranlyvu.github.io](https://tranlyvu.github.io/)
 
-If you like my project, feel fee to leave a few words of appreciation here [![Say Thank][9]][10].
-[9]: https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg
-[10]: https://saythanks.io/to/tranlyvu
+If you like my project, feel fee to leave a few words of appreciation here [![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/tranlyvu)
 
 ---
 License
