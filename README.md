@@ -67,42 +67,24 @@ The project has been tested on these Datasets
 2. [MovieLens](http://files.grouplens.org/datasets/movielens/)
 
 ---
-Contribution
+Contribution[![Open Source Helpers][7]][8] 
 ---
-
-Please follow [contribution instruction](https://github.com/tranlyvu/recommender/blob/dev/CONTRIBUTING.md) and [code of conduct](https://github.com/tranlyvu/recommender/blob/dev/CODE-OF-CONDUCT.md)
-
-### Development setup
-
-Simply run the following on your development environment:
-
-```
-$ pip install -r requirement.txt
-```
-Or to set up environment with virtualenv
-
-```
-$ cd <path to recommender project>
-$ python3 -m venv env
-$ source env/bin/activate
-$ pip install -r requirements.txt
-```
-
-If you are done working in the virtual environment for the moment, you can deactivate it:
-
-```
-$ deactivate
-```
-
-### [List of contributors](https://github.com/tranlyvu/recommender/blob/dev/CONTRIBUTORS.md) [![Open Source Helpers][7]][8] 
-
 [7]: https://www.codetriage.com/tranlyvu/recommender/badges/users.svg
 [8]: https://www.codetriage.com/tranlyvu/recommender
 
-### Hall of Fame
+Please follow [contribution instruction](https://github.com/tranlyvu/recommender/blob/dev/CONTRIBUTING.md) and [code of conduct](https://github.com/tranlyvu/recommender/blob/dev/CODE-OF-CONDUCT.md)
+
+### List of issues
+
+1. Update unit test ([#2](https://github.com/tranlyvu/recommender/issues/2))
+
+### Appreciation
+
+Feel free to add your name into the [list of contributors](https://github.com/tranlyvu/recommender/blob/dev/CONTRIBUTORS.md). You will automatically be inducted into Hall of Fame as a way to show my appreciation for your contributions
+
+#### Hall of Fame
 
 [![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/0)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/0)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/1)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/1)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/2)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/2)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/3)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/3)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/4)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/4)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/5)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/5)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/6)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/6)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/7)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/7)
-
 
 ---
 Project Architecture
@@ -118,16 +100,18 @@ Release History
 	* First official release
 
 ---
-Contact [![Say Thank][9]][10]
+Contact
 ---
-[9]: https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg
-[10]: https://saythanks.io/to/tranlyvu
 
 Feel free to contact me to discuss any issues, questions, or comments.
 *  Email: vutransingapore@gmail.com
 *  Linkedln: [@vutransingapore](https://www.linkedin.com/in/tranlyvu/)
 *  GitHub: [Tran Ly Vu](https://github.com/tranlyvu)
 *  Blog: [tranlyvu.github.io](https://tranlyvu.github.io/)
+
+If you like my project, feel fee to leave a few words of appreciation here [![Say Thank][9]][10].
+[9]: https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg
+[10]: https://saythanks.io/to/tranlyvu
 
 ---
 License
