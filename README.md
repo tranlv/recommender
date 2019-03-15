@@ -47,60 +47,44 @@ Table of contents
 Usage
 ---
 
-- Downloading a [release](https://github.com/tranlyvu/recommender/releases) or clone the source code: 
+- Downloading a [release](https://github.com/tranlyvu/recommender/releases)
+
+### API
+
+### Example
+
+- The preference space is dictionary data structure where keys are users and values are dictionary of items and ratings; i.e. 
 
 ```
-$ git clone https://github.com/tranlyvu/recommender.git
+preference_space = {'userA : {'item1' : 'ratingA1, 'item2' : 'ratingA2'..., 'itemn' : 'ratingAn}, ..., 'userZ:{'item1' : 'ratingZ1, 'item2' : 'ratingZ2'..., 'itemn' : 'ratingZn}}
 ```
-
-- The simplest way is to look at the [sample file](https://github.com/tranlyvu/recommender/tree/master/sample) for usage.
-
-- Note that the preference space is dictionary data structure where keys are users and values are dictionary of items and ratings; i.e. preference_space = {'userA : {'item1' : 'ratingA1, 'item2' : 'ratingA2'..., 'itemn' : 'ratingAn}, ..., 'userZ:{'item1' : 'ratingZ1, 'item2' : 'ratingZ2'..., 'itemn' : 'ratingZn}}
 
 ### Tested Datasets
 
-Jester ([here](http://goldberg.berkeley.edu/jester-data/jester-data-1.zip), [here](http://goldberg.berkeley.edu/jester-data/jester-data-2.zip) and [here](http://goldberg.berkeley.edu/jester-data/jester-data-3.zip))
+The project has been tested on these Datasets
 
-[MovieLens](http://files.grouplens.org/datasets/movielens/ml-10m.zip)
-
+1. [Jester](http://goldberg.berkeley.edu/jester-data)
+2. [MovieLens](http://files.grouplens.org/datasets/movielens/)
 
 ---
-Contribution
+Contribution[![Open Source Helpers][7]][8] 
 ---
-
-Please follow [contribution instruction](https://github.com/tranlyvu/recommender/blob/dev/CONTRIBUTING.md) and [code of conduct](https://github.com/tranlyvu/recommender/blob/dev/CODE-OF-CONDUCT.md)
-
-### Development setup
-
-recommender was developed with Python 3.6. Simply run the following on your development environment:
-
-```
-$pip install -r requirement.txt
-```
-Or to set up environment with virtualenv
-
-```
-$ cd <path to recommender project>
-$ python3 -m venv env
-$ source env/bin/activate
-$ pip install -r requirements.txt
-```
-
-If you are done working in the virtual environment for the moment, you can deactivate it:
-
-```
-$ deactivate
-```
-
-### [List of contributors](https://github.com/tranlyvu/recommender/blob/dev/CONTRIBUTORS.md) [![Open Source Helpers][7]][8] 
-
 [7]: https://www.codetriage.com/tranlyvu/recommender/badges/users.svg
 [8]: https://www.codetriage.com/tranlyvu/recommender
 
-### Hall of Fame
+Please follow our contribution convention at [contribution instruction](https://github.com/tranlyvu/recommender/blob/dev/CONTRIBUTING.md) and [code of conduct](https://github.com/tranlyvu/recommender/blob/dev/CODE-OF-CONDUCT.md)
+
+### List of issues
+
+1. Update unit test ([#2](https://github.com/tranlyvu/recommender/issues/2))
+
+### Appreciation
+
+Feel free to add your name into the [list of contributors](https://github.com/tranlyvu/recommender/blob/dev/CONTRIBUTORS.md). You will automatically be inducted into Hall of Fame as a way to show my appreciation for your contributions
+
+#### Hall of Fame
 
 [![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/0)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/0)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/1)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/1)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/2)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/2)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/3)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/3)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/4)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/4)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/5)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/5)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/6)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/6)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/7)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/7)
-
 
 ---
 Project Architecture
@@ -124,6 +108,8 @@ Feel free to contact me to discuss any issues, questions, or comments.
 *  Linkedln: [@vutransingapore](https://www.linkedin.com/in/tranlyvu/)
 *  GitHub: [Tran Ly Vu](https://github.com/tranlyvu)
 *  Blog: [tranlyvu.github.io](https://tranlyvu.github.io/)
+
+If you like my project, feel fee to leave a few words of appreciation here [![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/tranlyvu)
 
 ---
 License

@@ -1,35 +1,56 @@
 """
-Recommender
------
-	Recommender is A recommendation engine
-	For more than you ever wanted to know about Recommender, see the documentation:
+	Recommender
+	-----
+	recommender is a recommendation application using either item-based or user-based approaches
 
-	:copyright: (c) 2018 by Tran Ly VU.
-    :license: Apache License 2.0, see LICENSE for more details.
+	:copyright: (c) 2016 - 2019 by Tran Ly Vu. All Rights Reserved.
+    :license: Apache License 2.0
 """
 
 
-from setuptools import setup
+from setuptools import setup, find_packages
+
+with open("README.md", "r") as fh:
+    long_description = fh.read()
 
 setup(
     name='recommender',
-    packages=['recommender'],
-	description='A recommendation engine',
-	author='Tran Ly Vu',
+    version="1.1.0",
+    author='Tran Ly Vu',
 	author_email='vutransingapore@gmail.com',
-    license='Apache License',
-    url = 'https://github.com/tranlyvu/recommender', # use the URL to the github repo
-  	download_url = 'https://github.com/tranlyvu/recommender/releases', # I'll explain this in a second
+	maintainer='Tran Ly Vu <vutransingapore@gmail.com>',
+	maintainer_email='vutransingapore@gmail.com',
+	description='A recommendation application using either item-based or user-based approaches',
+	long_description=long_description,
+	long_description_content_type="text/markdown",
+	url='https://github.com/tranlyvu/recommender',
+	packages=find_packages(where="recommender", exclude=['docs', 'tests*']),
+    package_dir={'':'recommender'},
+	license='Apache License 2.0',
+  	download_url='https://github.com/tranlyvu/recommender/releases', 
     classifiers=[
-		'Development Status :: 3 - Alpha',
+    	'Programming Language :: Python :: 3.6',
+		'Programming Language :: Python :: 3.7',
+		"License :: OSI Approved :: Apache Software License ",
+		"Operating System :: OS Independent",
+		"Development Status :: 5 - Production/Stable",
 		'Intended Audience :: Science/Research',
-		'Framework :: IPython'
+		"Natural Language :: English",
+		"Environment :: Console",
 		'Topic :: Scientific/Engineering :: Artificial Intelligence',
-		'Programming Language :: Python :: 3.6',
-		'Operating System :: Microsoft :: Windows :: Windows 10',
-		'Natural Language :: English',
-		'License :: OSI Approved :: Apache License 2.0',
 	],
-	keywords='recommender',
-			
+	keywords=['recommender', "Artificial Intelligence"],
+	project_urls={
+	    'Source': 'https://github.com/tranlyvu/recommender',
+	    'Tracker': 'https://github.com/tranlyvu/recommender/issues',
+	    'Chat: Gitter': 'https://gitter.im/recommender/Lobby',
+	    'CI: Travis': 'https://travis-ci.org/tranlyvu/recommender',
+	    'Coverage: coveralls': 'https://coveralls.io/github/tranlyvu/recommender',
+	},
+	py_modules=["six"],
+	python_requires='>=2.6, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*, <4',
+	tests_require = [
+    	'pytest',
+    	'python-coveralls'
+    ]
 )
