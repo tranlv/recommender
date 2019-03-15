@@ -56,7 +56,21 @@ Usage
 - The preference space is dictionary data structure where keys are users and values are dictionary of items and ratings; i.e. 
 
 ```
-preference_space = {'userA : {'item1' : 'ratingA1, 'item2' : 'ratingA2'..., 'itemn' : 'ratingAn}, ..., 'userZ:{'item1' : 'ratingZ1, 'item2' : 'ratingZ2'..., 'itemn' : 'ratingZn}}
+preference_space = {
+					'userA : {
+							 'item1' : 'ratingA1, 
+							 'item2' : 'ratingA2',
+							  ..., 
+							  'itemn' : 'ratingAn
+							  }, 
+					..., 
+					'userZ:{
+							'item1' : 'ratingZ1,
+							 'item2' : 'ratingZ2',
+							  ...,
+							 'itemn' : 'ratingZn
+							}
+				    }
 ```
 
 ### Tested Datasets
