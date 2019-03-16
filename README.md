@@ -51,6 +51,7 @@ Usage
 
 ### API
 
+```
 recommender_engine.make_recomendation(person_to_recommend, preference_space, recommender_approach='user_based', number_of_items_to_recommend=10, similarity_measure='euclidean_distance')
 	
 	Return list of recommendation items based on the chosen approach and similarity emasure
@@ -66,6 +67,7 @@ recommender_engine.make_recomendation(person_to_recommend, preference_space, rec
 		number_of_items_to_recommend (int): number of items to recommend (default=10)
 
 		similarity_measure (str): similarity measurement method , support 'euclidean_distance' (default), 'cosine' or 'pearson_correlation'
+```
 
 ### Example
 
@@ -79,7 +81,7 @@ recommender_engine.make_recomendation(person_to_recommend, preference_space, rec
 								similarity = 'euclidean_distance')
 ```
 
-- The preference space is dictionary data structure where keys are users and values are dictionary of items and ratings; i.e. 
+- The preference space is dictionary data structure where keys are users and values are dictionary of items and ratings
 
 ```
 preference_space = {
@@ -140,7 +142,7 @@ Release History
 	* Simplified code base
 	* Added item-based approach
 	* Pulished to pypi
-	
+
 * v1.0.0 - Jan 16, 2018
 	* First official release
 
