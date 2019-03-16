@@ -51,11 +51,7 @@ Usage
 
 ### API
 
-recommender_engine.make_recomendation(person_to_recommend, preference_space, 
-									 recommender_approach='user_based', 
-									 number_of_items_to_recommend=10, 
-									 similarity_measure='euclidean_distance'
-									 )
+make_recomendation(person_to_recommend, preference_space, recommender_approach='user_based', number_of_items_to_recommend=10, similarity_measure='euclidean_distance')
 
 ```	
 	Return list of recommendation items based on the chosen approach and similarity emasure
