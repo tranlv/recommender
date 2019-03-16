@@ -1,10 +1,9 @@
 from .user_match import user_match
 from .preference_space_transform import preference_space_transform
-from recommender.similarity_measure import *
 
 def find_similar_item(preference_space, number_of_items_to_recommend=10, similarity_measure="euclidean_distance"):
-	"""
-		The function return list of similar item for each item in preference space
+	
+	""" Return list of similar item for each item in preference space
 		The function transform the preference space before checking each item
 	
 	Parameters
@@ -14,20 +13,21 @@ def find_similar_item(preference_space, number_of_items_to_recommend=10, similar
 											  'userB:{'item1':'ratingB1,'item2':'ratingB2....'itemn':'ratingBn},
 											   .....
 											  'userZ:{'item1':'ratingZ1,'item2':'ratingZ2....'itemn':'ratingZn},
-													}
+												}
 
 		number_of_items_to_recommend (int): number of items to recommend (default=10)
 		
-		similarity_measure (str): similarity measurement method , support 'euclidean_distance' (default), 'cosine' or 'pearson_correlation'
+		similarity_measure (str): similarity measurement method, support 'euclidean_distance' (default), 'cosine' or 'pearson_correlation'
 	
 	Returns
 	--------------	
-    	list
+    	dict
 
 	"""
 
-	results={}
+	results = {}
 	transformed_preference_space= preferance_space_transform(preference_space)
 	for item in transformed_preference_space:
-		results[item] = user_match(transformed_preference_space,item, number_of_items_to_recommend, similarity_measure)			
+		results[item] = user_match(transformed_preference_space, item, number_of_items_to_recommend, similarity_measure)			
+	
 	return results[0]

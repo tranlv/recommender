@@ -6,7 +6,7 @@
 
 from math import pow,sqrt
 
-def pearson_correlation(prefs,person1,pserson2):
+def pearson_correlation(prefs, person1, person2):
 	shared_item=[]
 	for item in prefs[person1]:
 		if prefs[person2]:

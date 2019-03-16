@@ -21,7 +21,7 @@ def make_recomendation(person_to_recommend,
 											  'userB:{'item1':'ratingB1,'item2':'ratingB2....'itemn':'ratingBn},
 											   .....
 											  'userZ:{'item1':'ratingZ1,'item2':'ratingZ2....'itemn':'ratingZn},
-													}
+												}
 
 		recommender_approach (str): support 'user_based' (default) or 'item_based'
 
@@ -53,7 +53,7 @@ def make_recomendation(person_to_recommend,
 		SIMILARITIES.index(similarity_measure)
 	except ValueError:
 		print("{} is not one of accepted similarity measure, using euclidean_distance by default!".format(similarity_measure))
-		similarity_measured = 'euclidean_distance'
+		similarity_measure = 'euclidean_distance'
 
 	
 	return recommender(person_to_recommend=person_to_recommend, \
@@ -109,7 +109,7 @@ def item_based(person_to_recommend, preference_space, number_of_items_to_recomme
 	results.reverse()
 	return [x[1] for x in results[0:number_of_items_to_recommend]]
 
-def user_based(person_to_recommend, preference_space, number_of_items_to_recommend=10, similarity_method='euclidean_distance'):
+def user_based(person_to_recommend, preference_space, number_of_items_to_recommend=10, similarity_measure='euclidean_distance'):
 
 	""" return list of recommended items using user_based approach
 	
@@ -141,8 +141,10 @@ def user_based(person_to_recommend, preference_space, number_of_items_to_recomme
 	for other_person in preference_space:	
 		if other_person == person_to_recommend: 
 			continue
-		similarity_measure = __import__("similarity_measure." + similarity_measure)
-		sim = similarity_measure(preference_space, person_to_recommend, other_person)		
+		from importlib import import_module
+		sim_mod= import_module("recommender.similarity_measure."  + similarity_measure)
+		sim_func = getattr(sim_mod, similarity_measure)
+		sim = sim_func(preference_space, person_to_recommend, other_person)		
 		
 		if sim <= 0: 
 			continue	

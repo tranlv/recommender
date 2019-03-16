@@ -5,17 +5,6 @@ from xlrd import open_workbook
 	This sample used jester dataset @ http://goldberg.berkeley.edu/jester-data/
 """
 
-def merge_preference_space(*prefs_space):
-	"""
-		The function merge all the preference spaces into one
-	"""
-
-	result = {}
-	for space in prefs_space:
-		result.update(space)
-	
-	return result
-
 def make_preference_space(raw_data, start):
 	"""
 		create preference_space from raw data
@@ -42,11 +31,15 @@ def make_preference_space_Jester(file_path):
 	prefs_space_2 = make_preference_space(raw_data_2, raw_data_1.nrows)
 	raw_data_3 = open_workbook(file_path + '/jester-data-3.xls').sheets()[0]
 	prefs_space_3 = make_preference_space(raw_data_3,raw_data_1.nrows + raw_data_2.nrows)
+
+	result = {}
+	for space in [prefs_space_1, prefs_space_2, prefs_space_3]:
+		result.update(space)
 	
-	return merge_preference_space(prefs_space_1, prefs_space_2, prefs_space_3)
+	return result
 	
 
-def sample_jester():
+def jester():
 	"""
 		Running the application using Jester dataset:
 	"""
@@ -59,4 +52,4 @@ def sample_jester():
 
 
 if __name__=="__main__":
-	sample_jester()
+	jester()
