@@ -51,7 +51,20 @@ Usage
 
 ### API
 
+recommender 
+
+recommender.make_recomendation('1')
+
 ### Example
+
+```
+
+>>> from recommender import recommender
+>>>	app = recommender(preference_space = preference_space, recommender = 'user_based', 
+						number_of_items_to_recommend = 10, similarity = 'euclidean_distance')
+	
+>>> app.make_recomendation('1')
+```
 
 - The preference space is dictionary data structure where keys are users and values are dictionary of items and ratings; i.e. 
 

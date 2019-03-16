@@ -2,31 +2,32 @@ from .user_match import user_match
 from .preference_space_transform import preference_space_transform
 from recommender.similarity_measure import *
 
-def find_similar_item(preference_space,n=10,similarity=euclidean_distance):
+def find_similar_item(preference_space, number_of_items_to_recommend=10, similarity_measure="euclidean_distance"):
 	"""
-	The function return list of similar item for each item in preference space
-	The function transform the preference space before checking each item
+		The function return list of similar item for each item in preference space
+		The function transform the preference space before checking each item
+	
 	Parameters
 	--------------
-	preference_space: dictionary type, keys are users while values are dictionary of items and ratings
-					ie. preference_space={'userA:{'item1':'ratingA1,'item2':'ratingA2....'itemn':'ratingAn},
-										  'userB:{'item1':'ratingB1,'item2':'ratingB2....'itemn':'ratingBn},
-										   .....
-										  'userZ:{'item1':'ratingZ1,'item2':'ratingZ2....'itemn':'ratingZn},
-												}
-	recommender : 'user_based' (default) or 'item_based'
-	
-	number_of_items_to_recommend: integer(default=10)
-	
-	similarity : 'euclidean_distance' (default), 'cosine' or 'pearson_correlation'
+		preference_space (dict) keys are users while values are dictionary of items and ratings
+						ie. preference_space={'userA:{'item1':'ratingA1,'item2':'ratingA2....'itemn':'ratingAn},
+											  'userB:{'item1':'ratingB1,'item2':'ratingB2....'itemn':'ratingBn},
+											   .....
+											  'userZ:{'item1':'ratingZ1,'item2':'ratingZ2....'itemn':'ratingZn},
+													}
+
+		number_of_items_to_recommend (int): number of items to recommend (default=10)
+		
+		similarity_measure (str): similarity measurement method , support 'euclidean_distance' (default), 'cosine' or 'pearson_correlation'
 	
 	Returns
 	--------------	
-    list
+    	list
 
 	"""
+
 	results={}
-	transformed_preference_space=preferance_space_transform(preference_space)
+	transformed_preference_space= preferance_space_transform(preference_space)
 	for item in transformed_preference_space:
-		results[item]=user_match(transformed_preference_space,item,n,similarity)			
+		results[item] = user_match(transformed_preference_space,item, number_of_items_to_recommend, similarity_measure)			
 	return results[0]
