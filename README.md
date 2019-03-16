@@ -51,19 +51,32 @@ Usage
 
 ### API
 
-recommender 
+recommender_engine.make_recomendation(person_to_recommend, preference_space, recommender_approach='user_based', number_of_items_to_recommend=10, similarity_measure='euclidean_distance')
+	
+	Return list of recommendation items based on the chosen approach and similarity emasure
 
-recommender.make_recomendation('1')
+	Parameters
+	--------------
+		person_to_recommend (str): user id/name to recommend to
+
+		preference_space (dict):  keys are user id/name and values are dictionary of items and ratings
+
+		recommender_approach (str): support 'user_based' (default) or 'item_based'
+
+		number_of_items_to_recommend (int): number of items to recommend (default=10)
+
+		similarity_measure (str): similarity measurement method , support 'euclidean_distance' (default), 'cosine' or 'pearson_correlation'
 
 ### Example
 
 ```
 
->>> from recommender import recommender
->>>	app = recommender(preference_space = preference_space, recommender = 'user_based', 
-						number_of_items_to_recommend = 10, similarity = 'euclidean_distance')
-	
->>> app.make_recomendation('1')
+>>> from recommender.recommender_engine import 
+>>>	result = make_recomendation(person_to_recommend = "user1", 
+								preference_space = preference_space,
+								recommender = 'user_based', 
+								number_of_items_to_recommend = 10,
+								similarity = 'euclidean_distance')
 ```
 
 - The preference space is dictionary data structure where keys are users and values are dictionary of items and ratings; i.e. 
@@ -123,6 +136,11 @@ To do
 Release History
 ---
 
+* v1.1.0 - Mar 17, 2019
+	* Simplified code base
+	* Added item-based approach
+	* Pulished to pypi
+	
 * v1.0.0 - Jan 16, 2018
 	* First official release
 
