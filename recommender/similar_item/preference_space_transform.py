@@ -1,4 +1,3 @@
-
 def preference_space_transform(preference_space):
 	""" The function takes in preference space with keys are users and transform it 
 

@@ -38,8 +38,10 @@ def make_recomendation(person_to_recommend,
 	if number_of_items_to_recommend == 0:
 		return []
 
-	if not isinstance(preference_space, dict) :
-		raise TypeError("preference space is not dictionary type!")
+	try:
+		isinstance(preference_space, dict) :
+	except ValueError:
+		print("preference space is not dictionary type!")
 
 	try: 
 		index = ALGORITHMS.index(recommender_approach)
@@ -90,7 +92,7 @@ def item_based(person_to_recommend, preference_space, number_of_items_to_recomme
 
 
 	list_of_items = preference_space[person_to_recommend]
-	from .similar_item import find_similar_item
+	from .similar_item.find_similar_item import find_similar_item
 	similarity_table = find_similar_item(preference_space, number_of_items_to_recommend, similarity_measure)
 	rating_time_sim = {}
 	similarity_sum = {}

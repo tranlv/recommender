@@ -1,8 +1,4 @@
-
-
 from importlib import import_module
-
-
 def user_match(preference_space, person_to_recommend, number_of_items_to_recommend=10, similarity_measure="euclidean_distance"):
 	""" Return list of user that match given person 
 			
