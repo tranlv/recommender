@@ -116,9 +116,7 @@ def item_based(person_to_recommend, preference_space, number_of_items_to_recomme
 		else:
 			results.append((rating, item))
 
-	results.sort(key = lambda x: x[0])
-	results.reverse()
-
+	results.sort(key = lambda x: x[0], reverse=True)
 	return [x[1] for x in results]
 
 def user_based(person_to_recommend, preference_space, number_of_items_to_recommend=10, similarity_measure='euclidean_distance'):
@@ -177,8 +175,7 @@ def user_based(person_to_recommend, preference_space, number_of_items_to_recomme
 		else:
 			results.append((rating, item))
 
-	results.sort(key = lambda x: x[0])
-	results.reverse()
+	results.sort(key = lambda x: x[0], reverse=True)
 
 	return [x[1] for x in results]
 	
