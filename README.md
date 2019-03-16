@@ -30,7 +30,7 @@
 
 A recommendation application using either item-based or user-based approaches.
 
-<img src="img/recommender.png" width="480" alt="Combined Image" />
+<img src="img/recommender_logo.png" width="480" alt="Combined Image" />
 
 ---
 Table of contents
