@@ -108,13 +108,15 @@ def item_based(person_to_recommend, preference_space, number_of_items_to_recomme
 			similarity_sum[similar_item] += similarity_score
 	
 	results = []
-	for user in rating_time_sim:
-		if similarity_sum[user] == 0:
-			results.append((0,user))
+	for item in rating_time_sim:
+		try:
+			rating = rating_time_sim[item]/similarity_sum[item]
+		except ZeroDivisionError:
+			results.append((0,item))
 		else:
-			results.append((rating_time_sims/similarity_sum[x], x))
-	
-	results.sort(key=lambda x:x[0])
+			results.append((rating, item))
+
+	results.sort(key = lambda x: x[0])
 	results.reverse()
 
 	return [x[1] for x in results]
@@ -168,12 +170,14 @@ def user_based(person_to_recommend, preference_space, number_of_items_to_recomme
 
 	results = []
 	for item in totals:
-		if similarity_sum[item] == 0:
+		try:
+			rating = totals[item] / similarity_sum[item]
+		except ZeroDivisionError:
 			results.append((0, item))
 		else:
-			results.append((totals[item] / similarity_sum[item], item))
+			results.append((rating, item))
 
-	results.sort(key=lambda x:x[0])
+	results.sort(key = lambda x: x[0])
 	results.reverse()
 
 	return [x[1] for x in results]
