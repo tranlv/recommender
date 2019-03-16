@@ -1,13 +1,13 @@
-from recommender.recommender import recommender
+from recommender import recommender_engine
 
 """
-	This sample used movielens datasets @ https://grouplens.org/datasets/movielens/
+	This sample used movielens datasets @ http://files.grouplens.org/datasets/movielens/ml-10m.zip
 """
 
 def make_preference_space_MovieLens(path):
+	""" create preference space for Movielens data set
 	"""
-		The function processes Movielens data set
-	"""
+	
 	movies = {}
 	for line in open(path + '/movies.dat'):
 		(movieid, title) = line.split('::')[0:2]
@@ -22,18 +22,19 @@ def make_preference_space_MovieLens(path):
 	return preference_space
 
 
-
-def sample_movielens():
-	"""
-		Running the application using Movielens dataset:
+def movielens():
+	""" Running the application using Movielens dataset
 	"""
 
 	#Creating preference_space from Movieslen dataset
 	preference_space = make_preference_space_MovieLens('../Movielens')
-	model = recommender(preference_space = preference_space, recommender = 'user_based', 
-						number_of_items_to_recommend = 10, similarity = 'euclidean_distance')
-	print(model.make_recomendation('1'))
 
+	result = recommender_engine.make_recomendation(person_to_recommend='1', 
+		                                           preference_space = preference_space, 
+												   recommender_approach = 'user_based', 
+												   number_of_items_to_recommend = 10,
+												   similarity_measure = 'euclidean_distance')
+	print(result)	
 
 if __name__=="__main__":
-	sample_movielens()
+	movielens()

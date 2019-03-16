@@ -7,23 +7,8 @@
     :license: Apache License 2.0
 """
 
-from .similarity_measure import (
-	cosine,
-	euclidean_distance,
-	pearson_correlation	
-)
-
-from .similar_item import (
-	find_similar_item,
-	preference_space_transform,
-	user_match
-)
-
 __all__=[
-		'dataHandle',
-		'recommenderEngine',
-		'similarItem',
-		'similarityMeasure'
+		'recommender_engine',
 		]	
 
 __version__ = '1.1.0'

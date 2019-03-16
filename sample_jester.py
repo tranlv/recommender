@@ -1,20 +1,9 @@
-from recommender.recommender import recommender
+from recommender.recommender_engine
 from xlrd import open_workbook
 
 """
 	This sample used jester dataset @ http://goldberg.berkeley.edu/jester-data/
 """
-
-def merge_preference_space(*prefs_space):
-	"""
-		The function merge all the preference spaces into one
-	"""
-
-	result = {}
-	for space in prefs_space:
-		result.update(space)
-	
-	return result
 
 def make_preference_space(raw_data, start):
 	"""
@@ -42,21 +31,27 @@ def make_preference_space_Jester(file_path):
 	prefs_space_2 = make_preference_space(raw_data_2, raw_data_1.nrows)
 	raw_data_3 = open_workbook(file_path + '/jester-data-3.xls').sheets()[0]
 	prefs_space_3 = make_preference_space(raw_data_3,raw_data_1.nrows + raw_data_2.nrows)
+
+	result = {}
+	for space in [prefs_space_1, prefs_space_2, prefs_space_3]:
+		result.update(space)
 	
-	return merge_preference_space(prefs_space_1, prefs_space_2, prefs_space_3)
+	return result
 	
 
-def sample_jester():
+def jester():
 	"""
 		Running the application using Jester dataset:
 	"""
 
 	#Creating preference_space from Jester dataset
 	preference_space = make_preference_space_Jester('../Jester')
-	model = recommender(preference_space, recommender = 'user_based', 
-					number_of_items_to_recommend = 5, similarity = 'euclidean_distance')
-	print(model.make_recomendation('user 36681'))
+	result = recommender_engine.make_recomendation('user 36681', preference_space, 
+													recommender_approach = 'user_based', 
+													number_of_items_to_recommend = 5, 
+													similarity_measure = 'euclidean_distance')
+	print(result)
 
 
 if __name__=="__main__":
-	sample_jester()
+	jester()
