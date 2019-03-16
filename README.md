@@ -14,7 +14,7 @@
 
 [3]: https://travis-ci.org/tranlyvu/recommender.svg?branch=dev
 [4]: https://travis-ci.org/tranlyvu/recommender
-[5]:https://coveralls.io/repos/github/tranlyvu/recommender/badge.svg?branch=dev
+[5]: https://coveralls.io/repos/github/tranlyvu/recommender/badge.svg?branch=dev
 [6]: https://coveralls.io/github/tranlyvu/recommender?branch=dev
 
 [13]: https://api.codeclimate.com/v1/badges/de05d6acb8cd3b11aa0c/maintainability
