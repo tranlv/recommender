@@ -39,7 +39,7 @@ def make_recomendation(person_to_recommend,
 		return []
 
 	try:
-		isinstance(preference_space, dict) :
+		isinstance(preference_space, dict)
 	except ValueError:
 		print("preference space is not dictionary type!")
 
