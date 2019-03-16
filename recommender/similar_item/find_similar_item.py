@@ -27,6 +27,7 @@ def find_similar_item(preference_space, number_of_items_to_recommend=10, similar
 
 	results = {}
 	transformed_preference_space = preference_space_transform(preference_space)
+	
 	for item in transformed_preference_space:
 		results[item] = user_match(transformed_preference_space, item, number_of_items_to_recommend, similarity_measure)			
 	

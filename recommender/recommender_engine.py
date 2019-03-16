@@ -1,4 +1,5 @@
 import sys
+from .similar_item.find_similar_item import find_similar_item
 
 ALGORITHMS = ['user_based', 'item_based']
 SIMILARITIES = ['euclidean_distance','cosine','pearson_correlation']
@@ -92,7 +93,6 @@ def item_based(person_to_recommend, preference_space, number_of_items_to_recomme
 
 
 	list_of_items = preference_space[person_to_recommend]
-	from .similar_item.find_similar_item import find_similar_item
 	similarity_table = find_similar_item(preference_space, number_of_items_to_recommend, similarity_measure)
 	rating_time_sim = {}
 	similarity_sum = {}
@@ -117,7 +117,7 @@ def item_based(person_to_recommend, preference_space, number_of_items_to_recomme
 			results.append((rating, item))
 
 	results.sort(key = lambda x: x[0], reverse=True)
-	return [x[1] for x in results]
+	return [x[1] for x in results[0:number_of_items_to_recommend]]
 
 def user_based(person_to_recommend, preference_space, number_of_items_to_recommend=10, similarity_measure='euclidean_distance'):
 
@@ -145,8 +145,8 @@ def user_based(person_to_recommend, preference_space, number_of_items_to_recomme
 	
 	"""
 
-	totals={}
-	similarity_sum={}
+	totals = {}
+	similarity_sum = {}
 
 	for other_person in preference_space:	
 		if other_person == person_to_recommend: 
@@ -177,7 +177,7 @@ def user_based(person_to_recommend, preference_space, number_of_items_to_recomme
 
 	results.sort(key = lambda x: x[0], reverse=True)
 
-	return [x[1] for x in results]
+	return [x[1] for x in results[0:number_of_items_to_recommend]]
 	
 	
 
