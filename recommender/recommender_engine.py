@@ -59,11 +59,12 @@ def make_recomendation(person_to_recommend,
 		similarity_measure = 'euclidean_distance'
 
 	
-	return recommender(person_to_recommend=person_to_recommend, \
+	recommendation = recommender(person_to_recommend=person_to_recommend, \
 						preference_space=preference_space, \
 			 		   number_of_items_to_recommend=number_of_items_to_recommend, \
 			 		   similarity_measure=similarity_measure) 
-
+		
+	return recommendation
 
 def item_based(person_to_recommend, preference_space, number_of_items_to_recommend=10, similarity_measure='euclidean_distance'):
 
