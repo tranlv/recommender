@@ -4,7 +4,7 @@ SIMILARITIES = ['euclidean_distance','cosine','pearson_correlation']
 def make_recomendation(self, person_to_recommend,
 					   preference_space,
 					   recommender_approach='user_based',
-			 		   no_of_items_to_recommend=10, 
+			 		   number_of_items_to_recommend=10, 
 			 		   similarity_measure='euclidean_distance'):
 
 	"""	 Return list of recommendation items
@@ -56,11 +56,11 @@ def make_recomendation(self, person_to_recommend,
 	
 	return recommender(person_to_recommend=person_to_recommend, \
 						preference_space=preference_space, \
-			 		   no_of_items_to_recommend=no_of_items_to_recommend, \
+			 		   number_of_items_to_recommend=no_of_items_to_recommend, \
 			 		   similarity_measure=similarity_measure) 
 
 
-def item_based(person_to_recommend, preference_space, no_of_items_to_recommend=10, similarity_measure='euclidean_distance'):
+def item_based(person_to_recommend, preference_space, number_of_items_to_recommend=10, similarity_measure='euclidean_distance'):
 
 	""" return list of recommended items using item_based approach
 	
@@ -105,9 +105,9 @@ def item_based(person_to_recommend, preference_space, no_of_items_to_recommend=1
 	
 	results.sort()
 	results.reverse()
-	return [x[1] for x in results[0:no_of_items_to_recommend]]
+	return [x[1] for x in results[0:number_of_items_to_recommend]]
 
-def user_based(person_to_recommend, preference_space, no_of_items_to_recommend=10, similarity_method='euclidean_distance'):
+def user_based(person_to_recommend, preference_space, number_of_items_to_recommend=10, similarity_method='euclidean_distance'):
 
 	""" return list of recommended items using user_based approach
 	
@@ -156,7 +156,7 @@ def user_based(person_to_recommend, preference_space, no_of_items_to_recommend=1
 	results.sort()
 	results.reverse()
 
-	return [x[1] for x in results[0:no_of_items_to_recommend]]
+	return [x[1] for x in results[0:number_of_items_to_recommend]]
 	
 	
 
