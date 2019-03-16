@@ -108,18 +108,8 @@ def item_based(person_to_recommend, preference_space, number_of_items_to_recomme
 			
 			similarity_sum.setdefault(similar_item, 0)			
 			similarity_sum[similar_item] += similarity_score
-	
-	results = []
-	for item in rating_time_sim:
-		try:
-			rating = rating_time_sim[item]/similarity_sum[item]
-		except ZeroDivisionError:
-			results.append((0,item))
-		else:
-			results.append((rating, item))
 
-	results.sort(key = lambda x: x[0], reverse=True)
-	return [x[1] for x in results[0:number_of_items_to_recommend]]
+	return extract_list_of_recommendation(rating_time_sim, similarity_sum)
 
 def user_based(person_to_recommend, preference_space, number_of_items_to_recommend=10, similarity_measure='euclidean_distance'):
 
@@ -168,21 +158,20 @@ def user_based(person_to_recommend, preference_space, number_of_items_to_recomme
 				similarity_sum.setdefault(item,0)
 				similarity_sum[item] += sim	
 
+	return extract_list_of_recommendation(totals, similarity_sum)
+	
+def extract_list_of_recommendation(score, similarity_sum):
 	results = []
-	for item in totals:
+	for item in score:
 		try:
-			rating = totals[item] / similarity_sum[item]
+			rating = score[item] / similarity_sum[item]
 		except ZeroDivisionError:
 			results.append((0, item))
 		else:
-			results.append((rating, item))
+			results.append((rating, item))	
 
 	results.sort(key = lambda x: x[0], reverse=True)
 
 	return [x[1] for x in results[0:number_of_items_to_recommend]]
-	
-	
-
-
 	
 
