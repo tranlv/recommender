@@ -43,6 +43,7 @@ def make_recomendation(person_to_recommend,
 		isinstance(preference_space, dict)
 	except ValueError:
 		print("preference space is not dictionary type!")
+		return
 
 	try: 
 		index = ALGORITHMS.index(recommender_approach)
@@ -63,7 +64,7 @@ def make_recomendation(person_to_recommend,
 						preference_space=preference_space, \
 			 		   number_of_items_to_recommend=number_of_items_to_recommend, \
 			 		   similarity_measure=similarity_measure) 
-		
+
 	return recommendation
 
 def item_based(person_to_recommend, preference_space, number_of_items_to_recommend=10, similarity_measure='euclidean_distance'):
