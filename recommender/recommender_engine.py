@@ -1,7 +1,9 @@
-ALGORITHMS_STRING = ['user_based', 'item_based']
+import sys
+
+ALGORITHMS = ['user_based', 'item_based']
 SIMILARITIES = ['euclidean_distance','cosine','pearson_correlation']
 
-def make_recomendation(self, person_to_recommend,
+def make_recomendation(person_to_recommend,
 					   preference_space,
 					   recommender_approach='user_based',
 			 		   number_of_items_to_recommend=10, 
@@ -33,7 +35,7 @@ def make_recomendation(self, person_to_recommend,
 		list
 	"""
 
-	if no_of_items_to_recommend == 0:
+	if number_of_items_to_recommend == 0:
 		return []
 
 	if not isinstance(preference_space, dict) :
@@ -56,7 +58,7 @@ def make_recomendation(self, person_to_recommend,
 	
 	return recommender(person_to_recommend=person_to_recommend, \
 						preference_space=preference_space, \
-			 		   number_of_items_to_recommend=no_of_items_to_recommend, \
+			 		   number_of_items_to_recommend=number_of_items_to_recommend, \
 			 		   similarity_measure=similarity_measure) 
 
 
@@ -89,7 +91,7 @@ def item_based(person_to_recommend, preference_space, number_of_items_to_recomme
 
 	list_of_items = preference_space[person_to_recommend]
 	from .similar_item import find_similar_item
-	similarity_table = find_similar_item(preference_space, no_of_items_to_recommend, similarity_measure)
+	similarity_table = find_similar_item(preference_space, number_of_items_to_recommend, similarity_measure)
 	rating_time_sim = {}
 	similarity_sum = {}
 	

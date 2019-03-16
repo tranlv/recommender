@@ -1,7 +1,7 @@
 from recommender import recommender_engine
 
 """
-	This sample used movielens datasets @ https://grouplens.org/datasets/movielens/
+	This sample used movielens datasets @ http://files.grouplens.org/datasets/movielens/ml-10m.zip
 """
 
 def make_preference_space_MovieLens(path):
@@ -29,7 +29,7 @@ def sample_movielens():
 
 	#Creating preference_space from Movieslen dataset
 	preference_space = make_preference_space_MovieLens('../Movielens')
-	result = recommender_engine.make_recomendation('1', preference_space = preference_space, 
+	result = recommender_engine.make_recomendation(person_to_recommend='1', preference_space = preference_space, 
 													recommender_approach = 'user_based', 
 												number_of_items_to_recommend = 10,
 												 similarity_measure = 'euclidean_distance')
