@@ -52,21 +52,26 @@ Usage
 ### API
 
 ```
-recommender_engine.make_recomendation(person_to_recommend, preference_space, recommender_approach='user_based', number_of_items_to_recommend=10, similarity_measure='euclidean_distance')
+recommender_engine.make_recomendation(person_to_recommend,
+									 preference_space, 
+									 recommender_approach='user_based', 
+									 number_of_items_to_recommend=10, 
+									 similarity_measure='euclidean_distance'
+									 )
 	
 	Return list of recommendation items based on the chosen approach and similarity emasure
 
 	Parameters
 	--------------
-		person_to_recommend (str): user id/name to recommend to
+	person_to_recommend (str): user id/name to recommend to
 
-		preference_space (dict):  keys are user id/name and values are dictionary of items and ratings
+	preference_space (dict):  keys are user id/name and values are dictionary of items and ratings
 
-		recommender_approach (str): support 'user_based' (default) or 'item_based'
+	recommender_approach (str): support 'user_based' (default) or 'item_based'
 
-		number_of_items_to_recommend (int): number of items to recommend (default=10)
+	number_of_items_to_recommend (int): number of items to recommend (default=10)
 
-		similarity_measure (str): similarity measurement method , support 'euclidean_distance' (default), 'cosine' or 'pearson_correlation'
+	similarity_measure (str): similarity measurement method , support 'euclidean_distance' (default), 'cosine' or 'pearson_correlation'
 ```
 
 ### Example
