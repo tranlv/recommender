@@ -97,19 +97,27 @@ def item_based(person_to_recommend, preference_space, number_of_items_to_recomme
 	rating_time_sim = {}
 	similarity_sum = {}
 	
-	for (item,rating) in list_of_items.items(): 
-		for (similarity_score,similar_item) in similarity_table[item]:
+	for (item, rating) in list_of_items.items(): 
+
+		for (similarity_score, similar_item) in similarity_table[item]:
+		
 			rating_time_sim.setdefault(similar_item, 0)
-			rating_time_sim[similar_item]+= similarity_score*rating
+			rating_time_sim[similar_item] += similarity_score * rating
 			
 			similarity_sum.setdefault(similar_item, 0)			
-			similarity_sum[similar_item]+=similarity_score
-							
-	results=[(rating_time_sims/similarity_sum[x], x) for x,rating_time_sims in rating_time_sim.items()] 
+			similarity_sum[similar_item] += similarity_score
 	
-	results.sort()
+	results = []
+	for user in rating_time_sim:
+		if similarity_sum[user] == 0:
+			results.append((0,user))
+		else:
+			results.append((rating_time_sims/similarity_sum[x], x))
+	
+	results.sort(key=lambda x:x[0])
 	results.reverse()
-	return [x[1] for x in results[0:number_of_items_to_recommend]]
+
+	return [x[1] for x in results]
 
 def user_based(person_to_recommend, preference_space, number_of_items_to_recommend=10, similarity_measure='euclidean_distance'):
 
@@ -144,7 +152,7 @@ def user_based(person_to_recommend, preference_space, number_of_items_to_recomme
 		if other_person == person_to_recommend: 
 			continue
 		from importlib import import_module
-		sim_mod= import_module("recommender.similarity_measure."  + similarity_measure)
+		sim_mod = import_module("recommender.similarity_measure."  + similarity_measure)
 		sim_func = getattr(sim_mod, similarity_measure)
 		sim = sim_func(preference_space, person_to_recommend, other_person)		
 		
@@ -156,13 +164,19 @@ def user_based(person_to_recommend, preference_space, number_of_items_to_recomme
 				totals.setdefault(item,0) #if item not in dict, will set default to 0
 				totals[item] += sim * preference_space[other_person][item]
 				similarity_sum.setdefault(item,0)
-				similarity_sum[item] += sim		
+				similarity_sum[item] += sim	
 
-	results=[(totals[item] / similarity_sum[item],item) for item in totals.keys()]
-	results.sort()
+	results = []
+	for item in totals:
+		if similarity_sum[item] == 0:
+			results.append((0, item))
+		else:
+			results.append((totals[item] / similarity_sum[item], item))
+
+	results.sort(key=lambda x:x[0])
 	results.reverse()
 
-	return [x[1] for x in results[0:number_of_items_to_recommend]]
+	return [x[1] for x in results]
 	
 	
 

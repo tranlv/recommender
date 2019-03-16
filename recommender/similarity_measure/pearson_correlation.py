@@ -1,12 +1,27 @@
-"""
-	return pearson correlation measure 
-	Preference_space is a dictionary , keys are users, values are dictionary of items and ratings 
-"""
-
 
 from math import pow,sqrt
 
 def pearson_correlation(prefs, person1, person2):
+	""" return pearson correlation measure 
+		
+	Parameters
+	--------------
+		preference_space (dict) keys are users while values are dictionary of items and ratings
+						ie. preference_space={'userA:{'item1':'ratingA1,'item2':'ratingA2....'itemn':'ratingAn},
+											  'userB:{'item1':'ratingB1,'item2':'ratingB2....'itemn':'ratingBn},
+											   .....
+											  'userZ:{'item1':'ratingZ1,'item2':'ratingZ2....'itemn':'ratingZn},
+													}
+
+		person1 (str): user id/name
+		
+		person2 (str): user id/name
+		
+	Returns
+	--------------	
+	    	float
+	"""
+	
 	shared_item=[]
 	for item in prefs[person1]:
 		if prefs[person2]:

@@ -19,11 +19,12 @@ def user_match(preference_space, person_to_recommend, number_of_items_to_recomme
 		--------------	
 	    	list
 	"""
-	sim_mod= import_module("recommender.similarity_measure."  + similarity_measure)
+	sim_mod = import_module("recommender.similarity_measure."  + similarity_measure)
 	sim_func = getattr(sim_mod, similarity_measure)
 
-	result=[(sim_func(preference_space,person_to_recommend,other),other) for other in preference_space if other != person_to_recommend]
-
+	result = [(sim_func(preference_space, person_to_recommend, other), other) for other in preference_space if other != person_to_recommend]
+	results.sort()
+	results.reverse()
 	return result[0:number_of_items_to_recommend + 1]
 
 		
