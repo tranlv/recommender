@@ -1,0 +1,18 @@
+language: python
+install:
+  - pip install python-coveralls
+script: 
+  - echo "skipping tests"
+  #- pytest --cov=recommender tests/ --cov-report=html
+branches:
+ only:
+  - dev
+after_success:
+  - coveralls
+matrix:
+  include:
+    - python: 3.6
+    - python: 3.7
+      dist: xenial
+      sudo: true
+
