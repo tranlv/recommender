@@ -60,7 +60,7 @@ def make_recomendation(self, person_to_recommend,
 			 		   similarity_measure=similarity_measure) 
 
 
-def item_based(person_to_recommend, preference_space, no_of_items_to_recommend, similarity_measure):
+def item_based(person_to_recommend, preference_space, no_of_items_to_recommend=10, similarity_measure='euclidean_distance'):
 
 	""" return list of recommended items using item_based approach
 	
@@ -107,7 +107,7 @@ def item_based(person_to_recommend, preference_space, no_of_items_to_recommend, 
 	results.reverse()
 	return [x[1] for x in results[0:no_of_items_to_recommend]]
 
-def user_based(person_to_recommend, preference_space, no_of_items_to_recommend, similarity_method):
+def user_based(person_to_recommend, preference_space, no_of_items_to_recommend=10, similarity_method='euclidean_distance'):
 
 	""" return list of recommended items using user_based approach
 	
