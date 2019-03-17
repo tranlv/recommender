@@ -15,7 +15,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='recommender-engine',
-    version="1.1.0",
+    version="1.1.1",
     author='Tran Ly Vu',
 	author_email='vutransingapore@gmail.com',
 	maintainer='Tran Ly Vu <vutransingapore@gmail.com>',
