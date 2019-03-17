@@ -90,7 +90,7 @@ make_recommendation(person_to_recommend, preference_space, recommender_approach=
 								similarity = 'euclidean_distance')
 ```
 
-- The preference space is dictionary data structure where keys are users and values are dictionary of items and ratings
+The preference space is dictionary data structure where keys are users and values are dictionary of items and ratings
 
 ```
 preference_space = {
