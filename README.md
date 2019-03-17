@@ -147,6 +147,9 @@ To do
 Release History
 ---
 
+* v1.1.1 - Mar 17, 2019
+	* Fix pypi shipping
+
 * v1.1.0 - Mar 17, 2019
 	* Simplified code base
 	* Added item-based approach
