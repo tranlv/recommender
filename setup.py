@@ -24,8 +24,8 @@ setup(
 	long_description=long_description,
 	long_description_content_type="text/markdown",
 	url='https://github.com/tranlyvu/recommender',
-	packages=find_packages(where="recommender", exclude=['docs', 'tests*']),
-    package_dir={'':'recommender'},
+	packages=find_packages(where="recommender_engine", exclude=['docs', 'tests*']),
+    package_dir={'':'recommender_engine'},
 	license='Apache License 2.0',
   	download_url='https://github.com/tranlyvu/recommender/releases', 
     classifiers=[

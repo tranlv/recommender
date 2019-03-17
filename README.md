@@ -47,7 +47,7 @@ Table of contents
 Usage
 ---
 
-- Install with pip
+Install with pip
 
 ```
 $ pip install recommender_engine
