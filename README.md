@@ -1,4 +1,4 @@
-# **recommender** [![version](https://img.shields.io/pypi/v/recommender-engine.svg)](https://pypi.org/project/recommender-engine/) [![HitCount][1]][2] [![star this repo][21]][22] [![fork this repo][23]][24] 
+# **recommender** https://github.com/tranlyvu/recommender [![HitCount][1]][2] [![star this repo][21]][22] [![fork this repo][23]][24] 
 
 
 [1]: http://hits.dwyl.io/tranlyvu/recommender.svg
@@ -12,7 +12,7 @@
 | :--- | :--- | :---  |
 | **Quality** | [![Maintainability][13]][14] | [![Requirements Status][19]][20] |
 | **Support** | [![gitter][17]][18] |  |
-| **Platform** | [![version][25]][26] |  |
+| **Platform** | [![version][25]][26] | [![implementation][27]][28] |
 
 [3]: https://travis-ci.org/tranlyvu/recommender.svg?branch=dev
 [4]: https://travis-ci.org/tranlyvu/recommender
@@ -31,6 +31,9 @@
 
 [25]: https://img.shields.io/pypi/pyversions/recommender-engine.svg
 [26]: https://pypi.org/project/recommender-engine/
+
+[27]: https://img.shields.io/pypi/implementation/recommender-engine.svg
+[228]: https://pypi.org/project/recommender-engine/
 
 
 A recommendation application using either item-based or user-based approaches.
