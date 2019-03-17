@@ -4,7 +4,7 @@ from .similar_item.find_similar_item import find_similar_item
 ALGORITHMS = ['user_based', 'item_based']
 SIMILARITIES = ['euclidean_distance','cosine','pearson_correlation']
 
-def make_recomendation(person_to_recommend,
+def make_recommendation(person_to_recommend,
 					   preference_space,
 					   recommender_approach='user_based',
 			 		   number_of_items_to_recommend=10, 

@@ -47,11 +47,15 @@ Table of contents
 Usage
 ---
 
-- Downloading a [release](https://github.com/tranlyvu/recommender/releases)
+- Install with pip
+
+```
+$ pip install recommender_engine
+```
 
 ### API
 
-make_recomendation(person_to_recommend, preference_space, recommender_approach='user_based', number_of_items_to_recommend=10, similarity_measure='euclidean_distance')
+make_recommendation(person_to_recommend, preference_space, recommender_approach='user_based', number_of_items_to_recommend=10, similarity_measure='euclidean_distance')
 
 ```	
 	Return list of recommendation items based on the chosen approach and similarity emasure
@@ -73,8 +77,8 @@ make_recomendation(person_to_recommend, preference_space, recommender_approach='
 
 ```
 
->>> from recommender.recommender_engine import make_recomendation
->>>	result = make_recomendation(person_to_recommend = "user1", 
+>>> from recommender.recommender_engine import make_recommendation
+>>>	result = make_recommendation(person_to_recommend = "user1", 
 								preference_space = preference_space,
 								recommender = 'user_based', 
 								number_of_items_to_recommend = 10,

@@ -1,4 +1,4 @@
-from recommender.recommender_engine
+from recommender.recommender_engine import make_recommendation
 from xlrd import open_workbook
 
 """
@@ -46,10 +46,10 @@ def jester():
 
 	#Creating preference_space from Jester dataset
 	preference_space = make_preference_space_Jester('../Jester')
-	result = recommender_engine.make_recomendation('user 36681', preference_space, 
-													recommender_approach = 'user_based', 
-													number_of_items_to_recommend = 5, 
-													similarity_measure = 'euclidean_distance')
+	result = make_recommendation('user 36681', preference_space, 
+								recommender_approach = 'user_based', 
+								number_of_items_to_recommend = 5, 
+								similarity_measure = 'euclidean_distance')
 	print(result)
 
 
