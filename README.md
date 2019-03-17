@@ -1,5 +1,4 @@
-# **recommender** [![version](https://img.shields.io/pypi/v/recommender-engine.svg)](https://pypi.org/project/recommender-engine/) [![Downloads][25]][26] [![HitCount][1]][2] [![star this repo][21]][22] [![fork this repo][23]][24] 
-
+# **recommender** [![version](https://img.shields.io/pypi/v/recommender-engine.svg)](https://pypi.org/project/recommender-engine/) [![HitCount][1]][2] [![star this repo][21]][22] [![fork this repo][23]][24] 
 
 
 [1]: http://hits.dwyl.io/tranlyvu/recommender.svg
@@ -119,7 +118,7 @@ The project has been tested on these Datasets
 2. [MovieLens](http://files.grouplens.org/datasets/movielens/)
 
 ---
-Contribution[![Open Source Helpers][7]][8] 
+Contribution [![Open Source Helpers][7]][8] 
 ---
 [7]: https://www.codetriage.com/tranlyvu/recommender/badges/users.svg
 [8]: https://www.codetriage.com/tranlyvu/recommender
