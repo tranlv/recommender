@@ -1,4 +1,5 @@
-# **recommender** [![HitCount][1]][2] [![star this repo][21]][22] [![fork this repo][23]][24] 
+# **recommender** [![version](https://img.shields.io/pypi/v/recommender-engine.svg)](https://pypi.org/project/recommender-engine/) [![HitCount][1]][2] [![star this repo][21]][22] [![fork this repo][23]][24] 
+
 
 [1]: http://hits.dwyl.io/tranlyvu/recommender.svg
 [2]: http://hits.dwyl.io/tranlyvu/recommender
@@ -10,11 +11,12 @@
 | Build | [![Build Status][3]][4] | [![Coverage Status][5]][6] |
 | :--- | :--- | :---  |
 | **Quality** | [![Maintainability][13]][14] | [![Requirements Status][19]][20] |
-| **Support** | [![Join the chat at https://gitter.im/find-link/Lobby][17]][18] |  |
+| **Support** | [![gitter][17]][18] |  |
+| **Platform** | [![version][25]][26] |  |
 
 [3]: https://travis-ci.org/tranlyvu/recommender.svg?branch=dev
 [4]: https://travis-ci.org/tranlyvu/recommender
-[5]:https://coveralls.io/repos/github/tranlyvu/recommender/badge.svg?branch=dev
+[5]: https://coveralls.io/repos/github/tranlyvu/recommender/badge.svg?branch=dev
 [6]: https://coveralls.io/github/tranlyvu/recommender?branch=dev
 
 [13]: https://api.codeclimate.com/v1/badges/de05d6acb8cd3b11aa0c/maintainability
@@ -27,10 +29,13 @@
 [17]: https://badges.gitter.im/gitterHQ/gitter.png
 [18]: https://gitter.im/recommender-engine
 
+[25]: https://img.shields.io/pypi/pyversions/recommender-engine.svg
+[26]: https://pypi.org/project/recommender-engine/
+
 
 A recommendation application using either item-based or user-based approaches.
 
-<img src="img/recommender.png" width="480" alt="Combined Image" />
+<img src="img/recommender_logo.png" width="480" alt="Combined Image" />
 
 ---
 Table of contents
@@ -47,13 +52,45 @@ Table of contents
 Usage
 ---
 
-- Downloading a [release](https://github.com/tranlyvu/recommender/releases)
+Install with pip
+
+```
+$ pip install recommender-engine
+```
 
 ### API
 
+make_recommendation(person_to_recommend, preference_space, recommender_approach='user_based', number_of_items_to_recommend=10, similarity_measure='euclidean_distance')
+
+```	
+	Return list of recommendation items based on the chosen approach and similarity emasure
+
+	Parameters
+	--------------
+	person_to_recommend (str): user id/name to recommend to
+
+	preference_space (dict):  keys are user id/name and values are dictionary of items and ratings
+
+	recommender_approach (str): support 'user_based' (default) or 'item_based'
+
+	number_of_items_to_recommend (int): number of items to recommend (default=10)
+
+	similarity_measure (str): similarity measurement method , support 'euclidean_distance' (default), 'cosine' or 'pearson_correlation'
+```
+
 ### Example
 
-- The preference space is dictionary data structure where keys are users and values are dictionary of items and ratings; i.e. 
+```
+
+>>> from recommender_engine.recommender import make_recommendation
+>>>	result = make_recommendation(person_to_recommend = "user1", 
+								preference_space = preference_space,
+								recommender = 'user_based', 
+								number_of_items_to_recommend = 10,
+								similarity = 'euclidean_distance')
+```
+
+The preference space is dictionary data structure where keys are users and values are dictionary of items and ratings
 
 ```
 preference_space = {
@@ -81,7 +118,7 @@ The project has been tested on these Datasets
 2. [MovieLens](http://files.grouplens.org/datasets/movielens/)
 
 ---
-Contribution[![Open Source Helpers][7]][8] 
+Contribution [![Open Source Helpers][7]][8] 
 ---
 [7]: https://www.codetriage.com/tranlyvu/recommender/badges/users.svg
 [8]: https://www.codetriage.com/tranlyvu/recommender
@@ -109,6 +146,11 @@ To do
 ---
 Release History
 ---
+
+* v1.1.0 - Mar 17, 2019
+	* Simplified code base
+	* Added item-based approach
+	* Published to pypi
 
 * v1.0.0 - Jan 16, 2018
 	* First official release
