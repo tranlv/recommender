@@ -1,4 +1,6 @@
-# **recommender** [![HitCount][1]][2] [![star this repo][21]][22] [![fork this repo][23]][24] 
+# **recommender** [![version](https://img.shields.io/pypi/v/recommender-engine.svg)](https://pypi.org/project/recommender-engine/) [![Downloads][25]][26] [![HitCount][1]][2] [![star this repo][21]][22] [![fork this repo][23]][24] 
+
+
 
 [1]: http://hits.dwyl.io/tranlyvu/recommender.svg
 [2]: http://hits.dwyl.io/tranlyvu/recommender
@@ -10,7 +12,8 @@
 | Build | [![Build Status][3]][4] | [![Coverage Status][5]][6] |
 | :--- | :--- | :---  |
 | **Quality** | [![Maintainability][13]][14] | [![Requirements Status][19]][20] |
-| **Support** | [![Join the chat at https://gitter.im/find-link/Lobby][17]][18] |  |
+| **Support** | [![gitter][17]][18] |  |
+| **Platform** | [![version][25]][26] |  |
 
 [3]: https://travis-ci.org/tranlyvu/recommender.svg?branch=dev
 [4]: https://travis-ci.org/tranlyvu/recommender
@@ -26,6 +29,9 @@
 
 [17]: https://badges.gitter.im/gitterHQ/gitter.png
 [18]: https://gitter.im/recommender-engine
+
+[25]: https://img.shields.io/pypi/pyversions/recommender-engine.svg
+[26]: https://pypi.org/project/recommender-engine/
 
 
 A recommendation application using either item-based or user-based approaches.
@@ -50,7 +56,7 @@ Usage
 Install with pip
 
 ```
-$ pip install recommender_engine
+$ pip install recommender-engine
 ```
 
 ### API
