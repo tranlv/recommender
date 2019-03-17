@@ -14,7 +14,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name='recommender_engine',
+    name='recommender-engine',
     version="1.1.0",
     author='Tran Ly Vu',
 	author_email='vutransingapore@gmail.com',
