@@ -29,7 +29,7 @@ def movielens():
 	#Creating preference_space from Movieslen dataset
 	preference_space = make_preference_space_MovieLens('../Movielens')
 
-	result =make_recommendation(person_to_recommend='1', 
+	result = make_recommendation(person_to_recommend='1', 
                                preference_space = preference_space, 
 							   recommender_approach = 'user_based', 
 							   number_of_items_to_recommend = 10,
