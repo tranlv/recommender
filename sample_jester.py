@@ -1,4 +1,4 @@
-from recommender.recommender_engine import make_recommendation
+from recommender_engine.recommender import make_recommendation
 from xlrd import open_workbook
 
 """

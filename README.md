@@ -77,7 +77,7 @@ make_recommendation(person_to_recommend, preference_space, recommender_approach=
 
 ```
 
->>> from recommender.recommender_engine import make_recommendation
+>>> from recommender_engine.recommender import make_recommendation
 >>>	result = make_recommendation(person_to_recommend = "user1", 
 								preference_space = preference_space,
 								recommender = 'user_based', 

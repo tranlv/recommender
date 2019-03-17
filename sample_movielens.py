@@ -1,4 +1,4 @@
-from recommender.recommender_engine import make_recommendation
+from recommender_engine.recommender import make_recommendation
 
 """
 	This sample used movielens datasets @ http://files.grouplens.org/datasets/movielens/ml-10m.zip
