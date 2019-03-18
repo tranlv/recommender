@@ -44,7 +44,7 @@ setup(
 		"Environment :: Console",
 		'Topic :: Scientific/Engineering :: Artificial Intelligence',
 	],
-	keywords=['recommender', "Artificial Intelligence", "Data Science"],
+	keywords=['Recommender', "Artificial Intelligence", "Data Science"],
 	project_urls={
 	    'Source': 'https://github.com/tranlyvu/recommender',
 	    'Tracker': 'https://github.com/tranlyvu/recommender/issues',
