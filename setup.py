@@ -38,11 +38,16 @@ setup(
 		"Operating System :: POSIX",
 		"Operating System :: Linux",
 		"Operating System :: Unix",
-		"Development Status :: 4 - Beta",
+		"Development Status :: 5 - Production/Stable",
 		'Intended Audience :: Science/Research',
+		"Intended Audience :: End Users/Desktop",
+		"Intended Audience :: Developers",
 		"Natural Language :: English",
 		"Environment :: Console",
+		"Topic :: Scientific/Engineering",
 		'Topic :: Scientific/Engineering :: Artificial Intelligence',
+		"Topic :: Scientific/Engineering :: Information Analysis",
+		"Topic :: Education"
 	],
 	keywords=['Recommender', "Artificial Intelligence", "Data Science"],
 	project_urls={
