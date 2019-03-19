@@ -1,12 +1,18 @@
-# **recommender** [![version](https://img.shields.io/pypi/v/recommender-engine.svg)](https://pypi.org/project/recommender-engine/) [![HitCount][1]][2] [![star this repo][21]][22] [![fork this repo][23]][24] 
+<p align="center">
+	<a href="https://github.com/tranlyvu/recommender"><img src="https://github.com/tranlyvu/recommender/tree/dev/img/recommender_logo.png" width="350" height="350"></a>	
+</p>
 
+<p align="center">
+	<a href="https://pypi.org/project/recommender-engine/"><img src="https://img.shields.io/pypi/v/recommender-engine.svg"></a>
+	<a href="https://pepy.tech/project/recommender-engine"><img src="https://pepy.tech/badge/recommender-engine"></a>
+	<a href="http://hits.dwyl.io/tranlyvu/recommender"><img src="http://hits.dwyl.io/tranlyvu/recommender.svg"></a>
+	<a href="https://github.com/tranlyvu/recommender"><img src="http://githubbadges.com/star.svg?user=tranlyvu&repo=recommender&style=default"></a>
+    <a href="https://github.com/tranlyvu/recommender/fork"><img src="http://githubbadges.com/fork.svg?user=tranlyvu&repo=recommender&style=default"></a>
+</p>
 
-[1]: http://hits.dwyl.io/tranlyvu/recommender.svg
-[2]: http://hits.dwyl.io/tranlyvu/recommender
-[21]: http://githubbadges.com/star.svg?user=tranlyvu&repo=recommender&style=default
-[22]: https://github.com/tranlyvu/recommender
-[23]: http://githubbadges.com/fork.svg?user=tranlyvu&repo=recommender&style=default
-[24]: https://github.com/tranlyvu/recommender/fork
+---
+A recommendation application using either item-based or user-based approaches.
+
 
 | Build | [![Build Status][3]][4] | [![Coverage Status][5]][6] |
 | :--- | :--- | :---  |
@@ -18,26 +24,17 @@
 [4]: https://travis-ci.org/tranlyvu/recommender
 [5]: https://coveralls.io/repos/github/tranlyvu/recommender/badge.svg?branch=dev
 [6]: https://coveralls.io/github/tranlyvu/recommender?branch=dev
-
 [13]: https://api.codeclimate.com/v1/badges/de05d6acb8cd3b11aa0c/maintainability
 [14]: https://codeclimate.com/github/tranlyvu/recommender/maintainability
-
-
 [19]: https://requires.io/github/tranlyvu/recommender/requirements.svg?branch=dev
 [20]: https://requires.io/github/tranlyvu/recommender/requirements/?branch=dev
-
 [17]: https://badges.gitter.im/gitterHQ/gitter.png
 [18]: https://gitter.im/recommender-engine
-
 [25]: https://img.shields.io/pypi/pyversions/recommender-engine.svg
 [26]: https://pypi.org/project/recommender-engine/
-
 [27]: https://img.shields.io/pypi/implementation/recommender-engine.svg
 [28]: https://pypi.org/project/recommender-engine/
-
-A recommendation application using either item-based or user-based approaches.
-
-<img src="img/recommender_logo.png" width="480" alt="Combined Image" />
+---
 
 ---
 Table of contents
@@ -85,11 +82,11 @@ make_recommendation(person_to_recommend, preference_space, recommender_approach=
 ```
 
 >>> from recommender_engine.recommender import make_recommendation
->>>	result = make_recommendation(person_to_recommend = "user1", 
+>>>	result = make_recommendation(person_to_recommend = "userA", 
 								preference_space = preference_space,
-								recommender = 'user_based', 
+								recommender_approach = 'user_based', 
 								number_of_items_to_recommend = 10,
-								similarity = 'euclidean_distance')
+								similarity_measure = 'euclidean_distance')
 ```
 
 The preference space is dictionary data structure where keys are users and values are dictionary of items and ratings
