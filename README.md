@@ -1,5 +1,5 @@
 <p align="center">
-	<a href="https://github.com/tranlyvu/recommender"><img src="https://github.com/tranlyvu/recommender/tree/dev/img/recommender_logo.png" width="350" height="350"></a>	
+	<a href="https://github.com/tranlyvu/recommender"><img src="https://github.com/tranlyvu/recommender/blob/dev/img/recommender_logo.png" width="300" height="300"></a>	
 </p>
 
 <p align="center">
