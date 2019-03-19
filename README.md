@@ -34,7 +34,6 @@ A recommendation application using either item-based or user-based approaches.
 [26]: https://pypi.org/project/recommender-engine/
 [27]: https://img.shields.io/pypi/implementation/recommender-engine.svg
 [28]: https://pypi.org/project/recommender-engine/
----
 
 ---
 Table of contents
