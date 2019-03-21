@@ -1,6 +1,19 @@
-				
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+"""Provide euclidean_distance function to calculate euclidean distance"""
+			
 from math import pow	
-				
+
+__version__ = '1.1.1'
+__author__ = "Tran Ly Vu (vutransingapore@gmail.com)"
+__copyright__ = "Copyright (c) 2016 - 2019 Tran Ly Vu. All Rights Reserved."
+__license__ = "Apache License 2.0"
+__credits__ = ["Tran Ly Vu"]
+__maintainer__ = "Tran Ly Vu"
+__email__ = "vutransingapore@gmail.com"
+__status__ = "Production"
+		
 def euclidean_distance(preference_space, person1, person2):
 	""" return euclidean distance measure @ https://en.wikipedia.org/wiki/Euclidean_distance
 		Parameters

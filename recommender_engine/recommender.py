@@ -1,5 +1,22 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+"""
+	make_recommendation - main function to perform recommendation
+	item_based and user_based are 2 functions to perform recommendation basen on given approach
+ """
+
 import sys
 from .similar_item.find_similar_item import find_similar_item
+
+__version__ = '1.1.1'
+__author__ = "Tran Ly Vu (vutransingapore@gmail.com)"
+__copyright__ = "Copyright (c) 2016 - 2019 Tran Ly Vu. All Rights Reserved."
+__license__ = "Apache License 2.0"
+__credits__ = ["Tran Ly Vu"]
+__maintainer__ = "Tran Ly Vu"
+__email__ = "vutransingapore@gmail.com"
+__status__ = "Production"
 
 ALGORITHMS = ['user_based', 'item_based']
 SIMILARITIES = ['euclidean_distance','cosine','pearson_correlation']
