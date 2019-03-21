@@ -11,8 +11,9 @@
 </p>
 
 ---
-A recommendation application using either item-based or user-based approaches.
+Recommender is a recommendation application using either item-based or user-based approaches.
 
+Recommender is at production stage - [v1.1.1](https://github.com/tranlyvu/recommender/releases), also see [change log](https://github.com/tranlyvu/recommender/blob/dev/CHANGELOG.md) for more details on release history.
 
 | Build | [![Build Status][3]][4] | [![Coverage Status][5]][6] |
 | :--- | :--- | :---  |
@@ -41,10 +42,8 @@ Table of contents
 
 1. [Usage](#Usage)
 2. [Contribution](#Contribution) 
-3. [Project Architecture](#Project-Architecture)
-4. [Release History](#Release-History)
-5. [Contact](#Contact)
-6. [License](#License)
+3. [Contact](#Contact)
+4. [License](#License)
 
 ---
 Usage
@@ -134,27 +133,6 @@ Feel free to add your name into the [list of contributors](https://github.com/tr
 #### Hall of Fame
 
 [![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/0)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/0)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/1)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/1)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/2)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/2)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/3)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/3)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/4)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/4)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/5)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/5)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/6)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/6)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/7)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/7)
-
----
-Project Architecture
----
-
-To do
-
----
-Release History
----
-
-* v1.1.1 - Mar 17, 2019
-	* Fix pypi shipping
-
-* v1.1.0 - Mar 17, 2019
-	* Simplified code base
-	* Added item-based approach
-	* Published to pypi
-
-* v1.0.0 - Jan 16, 2018
-	* First official release
 
 ---
 Contact
