@@ -2,7 +2,8 @@
 # -*- coding: utf-8 -*-
 
 """Provide euclidean_distance function to calculate euclidean distance"""
-			
+
+from __future__ import division			
 from math import pow	
 
 __version__ = '1.1.1'

@@ -3,6 +3,7 @@
 
 """Provide pearson_correlation function to calculate pearson correlation"""
 
+from __future__ import division
 from math import pow,sqrt
 
 __version__ = '1.1.1'

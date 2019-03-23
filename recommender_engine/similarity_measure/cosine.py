@@ -3,6 +3,7 @@
 
 """Prove cosine function to calculate cosine"""
 
+from __future__ import division
 from math import sqrt
 
 __version__ = '1.1.1'

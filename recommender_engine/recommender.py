@@ -5,7 +5,7 @@
 	make_recommendation - main function to perform recommendation
 	item_based and user_based are 2 functions to perform recommendation basen on given approach
  """
-
+from __future__ import print_function, division
 import sys
 from .similar_item.find_similar_item import find_similar_item
 
