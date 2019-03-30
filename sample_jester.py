@@ -1,4 +1,4 @@
-from recommender_engine.recommender import make_recommendation
+from recommender_engine import make_recommendation
 from xlrd import open_workbook
 
 """
@@ -6,9 +6,15 @@ from xlrd import open_workbook
 """
 
 def make_preference_space(raw_data, start):
-	"""
-		create preference_space from raw data
-		the data structure is dictionary with keys are users and values are dictionaries of items and ratings
+	
+	""" create preference_space from raw data
+
+		Args:
+			raw_data
+			start
+
+		Returns:
+			dict: keys are users and values are dictionaries of items and ratings
 	"""
 	preference_space = {}
 	for row in range(0,raw_data.nrows):	
