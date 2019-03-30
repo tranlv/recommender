@@ -11,9 +11,12 @@
 </p>
 
 ---
+
 Recommender is a recommendation application using either item-based or user-based approaches.
 
-Recommender is at production stage - [v1.1.1](https://github.com/tranlyvu/recommender/releases), also see [change log](https://github.com/tranlyvu/recommender/blob/dev/CHANGELOG.md) for more details on release history.
+Recommender is at version [v0.3.0](https://github.com/tranlyvu/recommender/releases), also see [change log](https://github.com/tranlyvu/recommender/blob/dev/CHANGELOG.md) for more details on release history.
+
+If you like this project, feel fee to leave a few words of appreciation here [![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/tranlyvu)
 
 | Build | [![Build Status][3]][4] | [![Coverage Status][5]][6] |
 | :--- | :--- | :---  |
@@ -42,7 +45,6 @@ Table of contents
 
 1. [Usage](#Usage)
 2. [Contribution](#Contribution) 
-3. [Contact](#Contact)
 4. [License](#License)
 
 ---
@@ -79,12 +81,12 @@ make_recommendation(person_to_recommend, preference_space, recommender_approach=
 
 ```
 
->>> from recommender_engine.recommender import make_recommendation
->>>	result = make_recommendation(person_to_recommend = "userA", 
-								preference_space = preference_space,
-								recommender_approach = 'user_based', 
-								number_of_items_to_recommend = 10,
-								similarity_measure = 'euclidean_distance')
+>>> from recommender_engine import make_recommendation
+>>>	result = make_recommendation(person_to_recommend = "userA",
+								 preference_space = preference_space,
+								 recommender_approach = 'user_based',
+								 number_of_items_to_recommend = 10,
+								 similarity_measure = 'euclidean_distance')
 ```
 
 The preference space is dictionary data structure where keys are users and values are dictionary of items and ratings
@@ -122,9 +124,7 @@ Contribution [![Open Source Helpers][7]][8]
 
 Please follow our contribution convention at [contribution instruction](https://github.com/tranlyvu/recommender/blob/dev/CONTRIBUTING.md) and [code of conduct](https://github.com/tranlyvu/recommender/blob/dev/CODE-OF-CONDUCT.md)
 
-### List of issues
-
-1. Update unit test ([#2](https://github.com/tranlyvu/recommender/issues/2))
+Please check out the [issue file](https://github.com/tranlyvu/recommender/blob/dev/ISSUES.md) for list of issues that required helps.
 
 ### Appreciation
 
@@ -133,18 +133,6 @@ Feel free to add your name into the [list of contributors](https://github.com/tr
 #### Hall of Fame
 
 [![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/0)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/0)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/1)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/1)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/2)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/2)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/3)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/3)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/4)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/4)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/5)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/5)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/6)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/6)[![](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/images/7)](https://sourcerer.io/fame/tranlyvu/tranlyvu/recommender/links/7)
-
----
-Contact
----
-
-Feel free to contact me to discuss any issues, questions, or comments.
-*  Email: vutransingapore@gmail.com
-*  Linkedln: [@vutransingapore](https://www.linkedin.com/in/tranlyvu/)
-*  GitHub: [Tran Ly Vu](https://github.com/tranlyvu)
-*  Blog: [tranlyvu.github.io](https://tranlyvu.github.io/)
-
-If you like my project, feel fee to leave a few words of appreciation here [![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/tranlyvu)
 
 ---
 License
