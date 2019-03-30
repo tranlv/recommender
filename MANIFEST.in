@@ -6,3 +6,11 @@ include LICENSE
 
 # Include the data files
 #recursive-include data *
+
+recursive-exclude * __pycache__
+recursive-exclude * *.pyc
+recursive-exclude * *.pyo
+recursive-exclude * *.orig
+
+prune tests*
+prune doc*

@@ -1,4 +1,4 @@
-from recommender_engine.recommender import make_recommendation
+from recommender_engine import make_recommendation
 
 """
 	This sample used movielens datasets @ http://files.grouplens.org/datasets/movielens/ml-10m.zip
@@ -30,10 +30,10 @@ def movielens():
 	preference_space = make_preference_space_MovieLens('../Movielens')
 
 	result = make_recommendation(person_to_recommend='1', 
-                               preference_space = preference_space, 
-							   recommender_approach = 'user_based', 
-							   number_of_items_to_recommend = 10,
-							   similarity_measure = 'euclidean_distance')
+                                 preference_space = preference_space, 
+							     recommender_approach = 'user_based', 
+							     number_of_items_to_recommend = 10,
+							     similarity_measure = 'cosine')
 	print(result)	
 
 if __name__=="__main__":
