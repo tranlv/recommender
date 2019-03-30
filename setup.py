@@ -15,7 +15,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='recommender-engine',
-    version="1.1.1",
+    version="0.2.1",
     author='Tran Ly Vu',
 	author_email='vutransingapore@gmail.com',
 	maintainer='Tran Ly Vu <vutransingapore@gmail.com>',
@@ -24,10 +24,12 @@ setup(
 	long_description=long_description,
 	long_description_content_type="text/markdown",
 	url='https://github.com/tranlyvu/recommender',
-	packages=find_packages(where="recommender_engine", exclude=['docs', 'tests*']),
-    package_dir={'':'recommender_engine'},
+	packages=find_packages(exclude=("*.tests", "*.tests.*", "tests.*", "tests", "docs")),
 	license='Apache License 2.0',
   	download_url='https://github.com/tranlyvu/recommender/releases', 
+  	zip_safe=False,
+	include_package_data=True,
+	platforms="any",
     classifiers=[
     	'Programming Language :: Python :: 2',
     	'Programming Language :: Python :: 2.7',
@@ -36,18 +38,21 @@ setup(
 		'Programming Language :: Python :: 3.7',
 		"License :: OSI Approved :: Apache Software License ",
 		"Operating System :: POSIX",
-		"Operating System :: Linux",
+		"Operating System :: POSIX :: Linux",
 		"Operating System :: Unix",
-		"Development Status :: 5 - Production/Stable",
-		'Intended Audience :: Science/Research',
+		"Development Status :: 4 - Beta",
+		"Intended Audience :: Science/Research",
 		"Intended Audience :: End Users/Desktop",
 		"Intended Audience :: Developers",
 		"Natural Language :: English",
 		"Environment :: Console",
 		"Topic :: Scientific/Engineering",
-		'Topic :: Scientific/Engineering :: Artificial Intelligence',
+		"Topic :: Scientific/Engineering :: Artificial Intelligence",
 		"Topic :: Scientific/Engineering :: Information Analysis",
-		"Topic :: Education"
+		"Topic :: Education",
+		"Programming Language :: Python :: Implementation :: CPython",
+		"Programming Language :: Python :: Implementation :: PyPy",
+		"Framework :: Pytest"
 	],
 	keywords=['Recommender', "Artificial Intelligence", "Data Science"],
 	project_urls={
@@ -58,7 +63,7 @@ setup(
 	    'Coverage: coveralls': 'https://coveralls.io/github/tranlyvu/recommender',
 	},
 	py_modules=["six"],
-	python_requires='>=2.6, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*, <4',
+	python_requires='>=2.7, <4',
 	tests_require = [
     	'pytest',
     	'python-coveralls'
