@@ -1,6 +1,4 @@
-<p align="center">
-	<a href="https://github.com/tranlyvu/recommender"><img src="https://github.com/tranlyvu/recommender/blob/dev/img/recommender_logo.png" width="300" height="300"></a>	
-</p>
+# **Recommender**
 
 <p align="center">
 	<a href="https://pypi.org/project/recommender-engine/"><img src="https://img.shields.io/pypi/v/recommender-engine.svg"></a>
