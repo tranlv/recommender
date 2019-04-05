@@ -3,7 +3,6 @@
 <p align="center">
 	<a href="https://pypi.org/project/recommender-engine/"><img src="https://img.shields.io/pypi/v/recommender-engine.svg"></a>
 	<a href="https://pepy.tech/project/recommender-engine"><img src="https://pepy.tech/badge/recommender-engine"></a>
-	<a href="http://hits.dwyl.io/tranlyvu/recommender"><img src="http://hits.dwyl.io/tranlyvu/recommender.svg"></a>
 	<a href="https://github.com/tranlyvu/recommender"><img src="http://githubbadges.com/star.svg?user=tranlyvu&repo=recommender&style=default"></a>
     <a href="https://github.com/tranlyvu/recommender/fork"><img src="http://githubbadges.com/fork.svg?user=tranlyvu&repo=recommender&style=default"></a>
 </p>
