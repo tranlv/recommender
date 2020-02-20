@@ -3,7 +3,6 @@
 <p align="center">
 	<a href="https://pypi.org/project/recommender-engine/"><img src="https://img.shields.io/pypi/v/recommender-engine.svg"></a>
 	<a href="https://pepy.tech/project/recommender-engine"><img src="https://pepy.tech/badge/recommender-engine"></a>
-	<a href="http://hits.dwyl.io/tranlyvu/recommender"><img src="http://hits.dwyl.io/tranlyvu/recommender.svg"></a>
 	<a href="https://github.com/tranlyvu/recommender"><img src="http://githubbadges.com/star.svg?user=tranlyvu&repo=recommender&style=default"></a>
     <a href="https://github.com/tranlyvu/recommender/fork"><img src="http://githubbadges.com/fork.svg?user=tranlyvu&repo=recommender&style=default"></a>
 </p>
@@ -14,12 +13,11 @@ Recommender is a recommendation application using either item-based or user-base
 
 Recommender is at version [v0.3.0](https://github.com/tranlyvu/recommender/releases), also see [change log](https://github.com/tranlyvu/recommender/blob/dev/CHANGELOG.md) for more details on release history.
 
-If you like this project, feel fee to leave a few words of appreciation here [![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/tranlyvu)
+If you like this project, feel fee to leave a few words of appreciation here [![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/vutransingapore%40gmail.com)
 
 | Build | [![Build Status][3]][4] | [![Coverage Status][5]][6] |
 | :--- | :--- | :---  |
 | **Quality** | [![Maintainability][13]][14] | [![Requirements Status][19]][20] |
-| **Support** | [![gitter][17]][18] |  |
 | **Platform** | [![pyversion][25]][26] | [![implementation][27]][28] |
 
 [3]: https://travis-ci.org/tranlyvu/recommender.svg?branch=dev
@@ -30,8 +28,6 @@ If you like this project, feel fee to leave a few words of appreciation here [![
 [14]: https://codeclimate.com/github/tranlyvu/recommender/maintainability
 [19]: https://requires.io/github/tranlyvu/recommender/requirements.svg?branch=dev
 [20]: https://requires.io/github/tranlyvu/recommender/requirements/?branch=dev
-[17]: https://badges.gitter.im/gitterHQ/gitter.png
-[18]: https://gitter.im/recommender-engine
 [25]: https://img.shields.io/pypi/pyversions/recommender-engine.svg
 [26]: https://pypi.org/project/recommender-engine/
 [27]: https://img.shields.io/pypi/implementation/recommender-engine.svg
@@ -78,33 +74,25 @@ make_recommendation(person_to_recommend, preference_space, recommender_approach=
 ### Example
 
 ```
-
 >>> from recommender_engine import make_recommendation
 >>>	result = make_recommendation(person_to_recommend = "userA",
-								 preference_space = preference_space,
-								 recommender_approach = 'user_based',
-								 number_of_items_to_recommend = 10,
-								 similarity_measure = 'euclidean_distance')
+                                 preference_space = preference_space,
+                                 recommender_approach = 'user_based',
+                                 number_of_items_to_recommend = 10,
+                                 similarity_measure = 'euclidean_distance')
 ```
 
 The preference space is dictionary data structure where keys are users and values are dictionary of items and ratings
 
 ```
-preference_space = {
-					'userA : {
-							 'item1' : 'ratingA1, 
-							 'item2' : 'ratingA2',
-							  ..., 
-							  'itemn' : 'ratingAn
-							  }, 
-					..., 
-					'userZ:{
-							'item1' : 'ratingZ1,
-							 'item2' : 'ratingZ2',
-							  ...,
-							 'itemn' : 'ratingZn
-							}
-				    }
+preference_space = { 'userA : { 'item1' : 'ratingA1, 
+                                 'item2' : 'ratingA2',
+                                 ...}, 
+                     ... 
+                     'userZ: { 'item1' : 'ratingZ1,
+                              'item2' : 'ratingZ2',
+							  ...}
+                    }
 ```
 
 ### Tested Datasets
@@ -115,10 +103,8 @@ The project has been tested on these Datasets
 2. [MovieLens](http://files.grouplens.org/datasets/movielens/)
 
 ---
-Contribution [![Open Source Helpers][7]][8] 
+Contribution 
 ---
-[7]: https://www.codetriage.com/tranlyvu/recommender/badges/users.svg
-[8]: https://www.codetriage.com/tranlyvu/recommender
 
 Please follow our contribution convention at [contribution instruction](https://github.com/tranlyvu/recommender/blob/dev/CONTRIBUTING.md) and [code of conduct](https://github.com/tranlyvu/recommender/blob/dev/CODE-OF-CONDUCT.md)
 
