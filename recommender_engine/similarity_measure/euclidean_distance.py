@@ -24,11 +24,9 @@ def euclidean_distance(preference_space, person1, person2):
 							ie. preference_space={'userA:{'item1':'ratingA1,'item2':'ratingA2....'itemn':'ratingAn},
 												  'userB:{'item1':'ratingB1,'item2':'ratingB2....'itemn':'ratingBn},
 												   .....
-												  'userZ:{'item1':'ratingZ1,'item2':'ratingZ2....'itemn':'ratingZn},
-														}
+												  'userZ:{'item1':'ratingZ1,'item2':'ratingZ2....'itemn':'ratingZn}}
 
 			person1 (str): user id/name
-			
 			person2 (str): user id/name
 		
 		Returns
