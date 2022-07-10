@@ -12,8 +12,6 @@ Recommender is a recommendation application using either item-based or user-base
 
 Recommender is at version [v0.3.0](https://github.com/tranlyvu/recommender/releases), also see [change log](https://github.com/tranlyvu/recommender/blob/dev/CHANGELOG.md) for more details on release history.
 
-If you like this project, feel fee to leave a few words of appreciation here [![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/vutransingapore%40gmail.com)
-
 | Build | [![Build Status][3]][4] | [![Coverage Status][5]][6] |
 | :--- | :--- | :---  |
 | **Quality** | [![Maintainability][13]][14] | |
